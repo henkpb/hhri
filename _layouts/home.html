@@ -17,10 +17,16 @@
   <body class="micl-window dark">
     <main class="micl-body">
       <section class="micl-pane">
-        <header class="micl-appbar micl-appbar-large">
+        <header>
+          <p>{{ page.subtitle }}</p>
+          <img src="{{ page.logo | relative_url }}" alt="Mental Health and Human Rights Info">
         </header>
-        <div>
-          {{ content }}
+        <div class="micl-pane__columns">
+          <div class="micl-pane__column">
+            {{ content }}
+          </div>
+          <div class="micl-pane__column">
+          </div>
         </div>
       </section>
     </main>
