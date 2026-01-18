@@ -18,7 +18,10 @@
     <main class="micl-body">
       <section class="micl-pane">
         <header>
-          <p>{{ page.subtitle | markdownify }}</p>
+          <div>
+            <p>{{ page.subtitle1 | markdownify }}</p>
+            <p>{{ page.subtitle2 | markdownify }}</p>
+          </div>
           <img src="{{ page.logo | relative_url }}" alt="Mental Health and Human Rights Info">
         </header>
         <div class="micl-pane__columns">
