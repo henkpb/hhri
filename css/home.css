@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'hhri';
+  src: url('hhri.ttf?4cg1h6') format('truetype'), url('hhri.woff?4cg1h6') format('woff'), url('hhri.svg?4cg1h6#hhri') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+header {
+  display: flex;
+}
+header div {
+  color: var(--md-sys-color-on-primary-container);
+}
