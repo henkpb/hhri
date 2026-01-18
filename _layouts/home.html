@@ -2,8 +2,8 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
-    <title>MHHRI | Mental Health and Human Rights Info</title>
-    <meta name="description" content="Mental Health and Human Rights Info">
+    <title>MHHRI | {{ page.title }}</title>
+    <meta name="description" content="{{ page.title }}">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="alternate" hreflang="en" href="https://henkpb.github.io/hhri/">
@@ -19,10 +19,11 @@
       <section class="micl-pane">
         <header>
           <div>
-            <p>{{ page.subtitle1 }}</p>
-            <p>{{ page.subtitle2 }}</p>
+            <p class="md-sys-typescale-display-medium">{{ page.title }}<p>
+            <p class="md-sys-typescale-headline-medium">{{ page.subtitle1 }}</p>
+            <p class="md-sys-typescale-headline-medium">{{ page.subtitle2 }}</p>
           </div>
-          <img src="{{ page.logo | relative_url }}" alt="Mental Health and Human Rights Info">
+          <img src="{{ page.logo | relative_url }}" alt="{{ page.title }}">
         </header>
         <div class="micl-pane__columns">
           <div class="micl-pane__column">
