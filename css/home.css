@@ -38,6 +38,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.micl-list li {
+  inline-size: calc((1600px - 32px) / 4);
+}
 
 .hhri-icon {
   font-family: 'hhri';
