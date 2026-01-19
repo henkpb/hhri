@@ -39,7 +39,7 @@
   flex-wrap: wrap;
 }
 .micl-list li {
-  inline-size: calc((1600px - 32px) / 4);
+  inline-size: 328px;
 }
 
 .hhri-icon {
