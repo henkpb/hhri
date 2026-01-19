@@ -8,18 +8,24 @@
 
 body {
   max-inline-size: 1600px;
+  margin-inline: auto;
+  background: linear-gradient(to bottom, rgb(from var(--md-sys-color-surface) r g b / 0.7), var(--md-sys-color-surface))
 }
 .micl-body {
   flex-direction: column;
-  column-gap: 64px;
 }
-.micl-pane>.micl-pane__columns>.micl-pane__column {
+.micl-pane>.micl-pane__columns {
+    column-gap: 64px;
+}
+.micl-pane>.micl-pane__columns>.micl-pane__column:first-of-type {
   flex: 1;
+  max-inline-size: 50%;
   color: var(--md-sys-color-on-primary-container);
 }
 .micl-pane>.micl-pane__columns div.micl-pane__column:last-of-type {
   flex: 2;
   justify-content: flex-end;
+  color: var(--md-sys-color-on-primary-container);
 }
 .micl-pane>.micl-pane__columns div.micl-pane__column h1 {
   margin-block: 24px;
