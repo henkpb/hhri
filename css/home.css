@@ -34,15 +34,8 @@
   margin-block: 16px;
 }
 
-.icon-gbv_woman {
+.hhri-icon {
   font-family: 'hhri';
-}
-.icon-gbv_children {
-  font-family: 'hhri';
-}
-.icon-gbv_men {
-  font-family: 'hhri';
-}
-.icon-gbv_no {
-  font-family: 'hhri';
+  font-size: 56px;
+  color: var(--md-sys-color-on-surface);
 }
