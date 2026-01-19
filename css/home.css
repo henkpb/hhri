@@ -33,6 +33,11 @@
 .micl-pane>.micl-pane__columns div.micl-pane__column p {
   margin-block: 16px;
 }
+.micl-list {
+  --md-sys-list-item-container-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .hhri-icon {
   font-family: 'hhri';
