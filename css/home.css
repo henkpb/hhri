@@ -33,3 +33,16 @@
 .micl-pane>.micl-pane__columns div.micl-pane__column p {
   margin-block: 16px;
 }
+
+.icon-gbv_woman {
+  font-family: 'hhri';
+}
+.icon-gbv_children {
+  font-family: 'hhri';
+}
+.icon-gbv_men {
+  font-family: 'hhri';
+}
+.icon-gbv_no {
+  font-family: 'hhri';
+}
