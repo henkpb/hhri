@@ -13,20 +13,17 @@ body {
   flex-direction: column;
   column-gap: 64px;
 }
-header {
-  display: flex;
-}
-header div {
+.micl-pane>.micl-pane__columns>.micl-pane__column {
   flex: 1;
   color: var(--md-sys-color-on-primary-container);
 }
-header div:last-of-type {
+.micl-pane>.micl-pane__columns div.micl-pane__column:last-of-type {
   flex: 2;
   justify-content: flex-end;
 }
-header div h1 {
+.micl-pane>.micl-pane__columns div.micl-pane__column h1 {
   margin-block: 24px;
 }
-header div p {
+.micl-pane>.micl-pane__columns div.micl-pane__column p {
   margin-block: 16px;
 }
