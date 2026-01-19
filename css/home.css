@@ -6,9 +6,27 @@
   font-display: swap;
 }
 
+body {
+  max-inline-size: 1600px;
+}
+.micl-body {
+  flex-direction: column;
+  column-gap: 64px;
+}
 header {
   display: flex;
 }
 header div {
+  flex: 1;
   color: var(--md-sys-color-on-primary-container);
+}
+header div:last-of-type {
+  flex: 2;
+  justify-content: flex-end;
+}
+header div h1 {
+  margin-block: 24px;
+}
+header div p {
+  margin-block: 16px;
 }
