@@ -5,9 +5,9 @@ title: Mental Health and Human Rights Info
 subtitle1: We are a reliable source of information dealing with mental health in war and conflict areas.
 subtitle2: Search through our thematic pages and the database with guidelines, manuals, publications and more.
 
-training_title: Training Manuals
-training_text: For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors.
-training_list:
+manual_title: Training Manuals
+manual_text: For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors.
+manual_list:
   - title: Women
     icon: "\uE913"
     link:
@@ -61,9 +61,9 @@ theme_list:
     icon: "\uE92B"
     link:
 
-resources_title: Other Resources
-resources_text: In this section you will find other resources related to current conflicts, cooperation and tools to help survivors.
-resources_list:
+resource_title: Other Resources
+resource_text: In this section you will find other resources related to current conflicts, cooperation and tools to help survivors.
+resource_list:
   - title: 3rd Nordic MHPSS Conference Oslo 2026
     icon: "\uE91D"
     link:
