@@ -6,40 +6,40 @@ subtitle1: We are a reliable source of information dealing with mental health in
 subtitle2: Search through our thematic pages and the database with guidelines, manuals, publications and more.
 theme_list:
   - title: Gender Based Violence
-    icon : &#xE914;
+    icon : "\uE914";
     link :
   - title: Children in armed conflict
-    icon : &#xE902;
+    icon : "\uE902";
     link :
   - title: Post Traumatic Stress Disorder
-    icon : &#xE923;
+    icon : "\uE923";
     link :
   - title: Refugees and asylum seekers
-    icon : &#xE924;
+    icon : "\uE924";
     link :
   - title: Post Conflict Communities and Transitional Justice
-    icon : &#xE922;
+    icon : "\uE922";
     link :
   - title: Torture
-    icon : &#xE92C;
+    icon : "\uE92C";
     link :
   - title: Ethics in Psychosocial Work
-    icon : &#xE90A;
+    icon : "\uE90A";
     link :
   - title: Helping the helpers
-    icon : &#xE916;
+    icon : "\uE916";
     link :
   - title: LGBTIQ+ Rights
-    icon : &#xE91A;
+    icon : "\uE91A";
     link :
   - title: Human Rights Defenders
-    icon : &#xE905;
+    icon : "\uE905";
     link :
   - title: Disaster
-    icon : &#xE906;
+    icon : "\uE906";
     link :
   - title: Supporting Survivors of Human Rights Violations
-    icon : &#xE92B;
+    icon : "\uE92B";
     link :
 ---
 
