@@ -61,113 +61,125 @@
           </div>
         </div>
 
-        <div class="micl-card-outlined">
-          <div class="micl-card__headline-l">
-            <h2>Training Manuals</h2>
+        {% if page.manual_title %}
+          <div class="micl-card-outlined">
+            <div class="micl-card__headline-l">
+              <h2>{{ page.manual_title }}</h2>
+            </div>
+            {% if page.manual_text %}
+              <p class="micl-card__supporting-text">{{ page.manual_text }}</p>
+            {% endif %}
+            <div class="micl-card__content">
+              {% if page.manual_list %}
+                <ul class="micl-list">
+                  {% for item in page.manual_list %}
+                    <li class="micl-list-item-one" tabindex="0">
+                      <a href="{{ item.link }}" tabindex="-1">
+                        <span class="micl-list-item__image hhri-icon">{{ item.icon }}</span>
+                        <span class="micl-list-item__text">
+                          <span class="micl-list-item__headline">{{ item.title }}</span>
+                          {% if item.text %}
+                            <span class="micl-list-item__supporting-text">{{ item.text }}</span>
+                          {% endif %}
+                        </span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
           </div>
-          <p class="micl-card__supporting-text">For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors.</p>
-          <div class="micl-card__content">
-            <ul class="micl-list">
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE913;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Women</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE90D;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Children</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE90F;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Boys and men</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE910;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Kjønnsbasert vold</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        {% endif %}
 
-        <div class="micl-card-outlined">
-          <div class="micl-card__headline-l">
-            <h2>Themes</h2>
+        {% if page.theme_title %}
+          <div class="micl-card-outlined">
+            <div class="micl-card__headline-l">
+              <h2>{{ page.theme_title }}</h2>
+            </div>
+            {% if page.theme_text %}
+              <p class="micl-card__supporting-text">{{ page.theme_text }}</p>
+            {% endif %}
+            <div class="micl-card__content">
+              {% if page.theme_list %}
+                <ul class="micl-list">
+                  {% for item in page.theme_list %}
+                    <li class="micl-list-item-one" tabindex="0">
+                      <a href="{{ item.link }}" tabindex="-1">
+                        <span class="micl-list-item__image hhri-icon">{{ item.icon }}</span>
+                        <span class="micl-list-item__text">
+                          <span class="micl-list-item__headline">{{ item.title }}</span>
+                          {% if item.text %}
+                            <span class="micl-list-item__supporting-text">{{ item.text }}</span>
+                          {% endif %}
+                        </span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
           </div>
-          <p class="micl-card__supporting-text">Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas.</p>
-          <div class="micl-card__content">
-            <ul class="micl-list">
-              {% for item in page.theme_list %}
-                <li class="micl-list-item-one" tabindex="0">
-                  <a href="{{ item.link }}" tabindex="-1">
-                    <span class="micl-list-item__image hhri-icon">{{ item.icon }}</span>
-                    <span class="micl-list-item__text">
-                      <span class="micl-list-item__headline">{{ item.title }}</span>
-                    </span>
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+        {% endif %}
 
-        <div class="micl-card-outlined">
-          <div class="micl-card__headline-l">
-            <h2>Other Resources</h2>
+        {% if page.resource_title %}
+          <div class="micl-card-outlined">
+            <div class="micl-card__headline-l">
+              <h2>{{ page.resource_title }}</h2>
+            </div>
+            {% if page.resource_text %}
+              <p class="micl-card__supporting-text">{{ page.resource_text }}</p>
+            {% endif %}
+            <div class="micl-card__content">
+              {% if page.resource_list %}
+                <ul class="micl-list">
+                  {% for item in page.resource_list %}
+                    <li class="micl-list-item-one" tabindex="0">
+                      <a href="{{ item.link }}" tabindex="-1">
+                        <span class="micl-list-item__image hhri-icon">{{ item.icon }}</span>
+                        <span class="micl-list-item__text">
+                          <span class="micl-list-item__headline">{{ item.title }}</span>
+                          {% if item.text %}
+                            <span class="micl-list-item__supporting-text">{{ item.text }}</span>
+                          {% endif %}
+                        </span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
           </div>
-          <p class="micl-card__supporting-text">In this section you will find other resources related to current conflicts, cooperation and tools to help survivors</p>
-          <div class="micl-card__content">
-            <ul class="micl-list">
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE91D;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">3rd Nordic MHPSS Conference Oslo 2026</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-two" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE915;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Ресурси психічного здоров’я</span>
-                    <span class="micl-list-item__supporting-text">Ukraine Mental Health Resources</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE92A;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Are you a survivor?</span>
-                  </span>
-                </a>
-              </li>
-              <li class="micl-list-item-one" tabindex="0">
-                <a href="" tabindex="-1">
-                  <span class="micl-list-item__image hhri-icon">&#xE902;</span>
-                  <span class="micl-list-item__text">
-                    <span class="micl-list-item__headline">Children and War Foundation</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
+        {% endif %}
+
+        {% if page.etraining_title %}
+          <div class="micl-card-outlined">
+            <div class="micl-card__headline-l">
+              <h2>{{ page.etraining_title }}</h2>
+            </div>
+            {% if page.etraining_text %}
+              <p class="micl-card__supporting-text">{{ page.etraining_text }}</p>
+            {% endif %}
+            <div class="micl-card__content">
+              {% if page.etraining_list %}
+                <ul class="micl-list">
+                  {% for item in page.etraining_list %}
+                    <li class="micl-list-item-one" tabindex="0">
+                      <a href="{{ item.link }}" tabindex="-1">
+                        <span class="micl-list-item__image hhri-icon">{{ item.icon }}</span>
+                        <span class="micl-list-item__text">
+                          <span class="micl-list-item__headline">{{ item.title }}</span>
+                          {% if item.text %}
+                            <span class="micl-list-item__supporting-text">{{ item.text }}</span>
+                          {% endif %}
+                        </span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
           </div>
-        </div>
+        {% endif %}
       </section>
     </main>
   </body>
