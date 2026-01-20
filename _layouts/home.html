@@ -53,12 +53,21 @@
         </header>
       </section>
       <section class="micl-pane">
-        <div class="micl-card-filled">
-          <div class="micl-card__headline-m">
-            <h2>News</h2>
-          </div>
-          <div class="micl-card__content">
-          </div>
+        <div class="hhri-news-section">
+          {% assign sorted_news = site.news | sort: 'date' | reverse %}
+
+          {% for item in sorted_news limit:3 %}
+            <div class="micl-card-filled" tabindex="0">
+              <img alt="{{ item.title }} class="micl-card__image" src="{{ item.url }}">
+              <div class="micl-card__headline-m">
+                <h2>{{ item.title }}</h2>
+              </div>
+              <p class="micl-card__supporting-text">{{ item.date }}</p>
+              <div class="micl-card__content">
+                <p>{{ item.text }}</p>
+              </div>
+            </div>
+          {% endfor %}
         </div>
 
         {% if page.manual_title %}
