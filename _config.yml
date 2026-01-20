@@ -1,5 +1,7 @@
 title: MHHRI
-theme: jekyll-theme-cayman
 description: Mental Health and Human Rights Info
 baseurl: /hhri
 url: https://henkpb.github.io
+collections:
+  news:
+    output: true
