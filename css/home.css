@@ -42,6 +42,16 @@
   inline-size: 328px;
 }
 
+.hhri-news-section {
+  display: flex;
+  margin-block: 24px;
+}
+.hhri-news-section > div {
+  flex: 1;
+}
+.hhri-news-section micl-card-content {
+  color: var(--md-sys-color-on-surface);
+}
 .hhri-icon {
   font-family: 'hhri';
   font-size: 56px;
