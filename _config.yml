@@ -5,3 +5,6 @@ url: https://henkpb.github.io
 collections:
   news:
     output: true
+exclude:
+  - README.md
+  - "*/README.md"
