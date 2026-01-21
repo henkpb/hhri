@@ -62,7 +62,7 @@
               <div class="micl-card__headline-m">
                 <h2>{{ item.title }}</h2>
               </div>
-              <p class="micl-card__supporting-text">{{ item.date }}</p>
+              <p class="micl-card__supporting-text">{{ item.date | date: "%d.%m.%Y" }}</p>
               <div class="micl-card__content">
                 <p>{{ item.text }}</p>
               </div>
