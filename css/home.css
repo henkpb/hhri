@@ -44,7 +44,11 @@
 
 .hhri-news-section {
   display: flex;
-  margin-block: 24px;
+  margin-block: 48px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .hhri-news-section > div {
   flex: 1;
