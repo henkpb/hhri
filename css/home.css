@@ -49,7 +49,7 @@
 .hhri-news-section > div {
   flex: 1;
 }
-.hhri-news-section .micl-card-content {
+.hhri-news-section .micl-card__content {
   color: var(--md-sys-color-on-surface);
 }
 .hhri-icon {
