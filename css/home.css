@@ -13,6 +13,7 @@
 }
 .micl-body {
   flex-direction: column;
+  row-gap: 48px;
 }
 .micl-pane>.micl-pane__columns {
     column-gap: 64px;
