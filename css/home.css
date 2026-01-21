@@ -42,9 +42,11 @@
   inline-size: 328px;
 }
 
+.micl-pane:has(.hhri-news-section) {
+  row-gap: 48px;
+}
 .hhri-news-section {
   display: flex;
-  margin-block: 48px;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -52,6 +54,7 @@
 }
 .hhri-news-section > div {
   flex: 1;
+  padding-block-start: 16px;
 }
 .hhri-news-section .micl-card__content {
   color: var(--md-sys-color-on-surface);
