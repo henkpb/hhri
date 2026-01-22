@@ -2,6 +2,7 @@ title: MHHRI
 description: Mental Health and Human Rights Info
 baseurl: /hhri
 url: https://henkpb.github.io
+collections_dir: content
 collections:
   news:
     output: true
