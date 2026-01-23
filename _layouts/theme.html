@@ -29,10 +29,20 @@
                   <span class="micl-card__headline-s">
                     <span class="micl-heading">{{ item.title }}</span>
                   </span>
-                  <span class="micl-card__subhead">{{ item.year }} | {{ item.organization }}</span>
+                  {% if item.year or item.organization %}
+                    <span class="micl-card__subhead">
+                      {{ item.year }}
+                      {% if item.year and item.organization %} | {% endif %}
+                      {{ item.organization }}
+                    </span>
+                  {% endif %}
                 </summary>
                 <div class="micl-card__content md-sys-typescale-body-medium">
-                  <span>{{ item.content }}</span>
+                  {{ item.content }}
+                  {% if item.link %}
+                    <hr class="micl-divider">
+                    <a href="{{ item.link }}" class="micl-button-text-s">Open</a>
+                  {% endif %}
                 </div>
               </details>
             {% endif %}
@@ -47,10 +57,20 @@
                   <span class="micl-card__headline-s">
                     <span class="micl-heading">{{ item.title }}</span>
                   </span>
-                  <span class="micl-card__subhead">{{ item.year }} | {{ item.organization }}</span>
+                  {% if item.year or item.organization %}
+                    <span class="micl-card__subhead">
+                      {{ item.year }}
+                      {% if item.year and item.organization %} | {% endif %}
+                      {{ item.organization }}
+                    </span>
+                  {% endif %}
                 </summary>
                 <div class="micl-card__content md-sys-typescale-body-medium">
-                  <span>{{ item.content }}</span>
+                  {{ item.content }}
+                  {% if item.link %}
+                    <hr class="micl-divider">
+                    <a href="{{ item.link }}" class="micl-button-text-s">Open</a>
+                  {% endif %}
                 </div>
               </details>
             {% endif %}
