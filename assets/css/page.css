@@ -8,6 +8,7 @@
   padding-block: 24px;
 }
 .hhri-theme-section {
+  --md-sys-divider-space: 8px;
   padding-block-start: 16px;
   inline-size: 320px;
 }
