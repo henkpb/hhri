@@ -1,12 +1,13 @@
+.micl-card__headline-s .micl-heading {
+  white-space: normal;
+}
+
 .hhri-theme-sections {
   display: flex;
   flex-wrap: wrap;
   padding-block: 24px;
 }
 .hhri-theme-section {
-  padding-block-start: 24px;
+  padding-block-start: 16px;
   inline-size: 320px;
-}
-.micl-heading {
-  white-space: normal;
 }
