@@ -12,3 +12,6 @@
   padding-block-start: 16px;
   inline-size: 320px;
 }
+.hhri-theme-section a {
+  margin-block-end: 6px;
+}
