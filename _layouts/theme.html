@@ -29,11 +29,10 @@
                 </div>
                 <p class="micl-card__supporting-text">{{ item.organization }}</p>
                 <div class="micl-card__content md-sys-typescale-body-medium">
-                  <span>{{ content }}</span>
+                  <span>{{ item.content }}</span>
                 </div>
               </div>
             {% endif %}
-          <h1>{{ item.path }}</h1>
           {% endfor %}
         </div>
 
@@ -46,7 +45,7 @@
                 </div>
                 <p class="micl-card__supporting-text">{{ item.organization }}</p>
                 <div class="micl-card__content md-sys-typescale-body-medium">
-                  <span>{{ content }}</span>
+                  <span>{{ item.content }}</span>
                 </div>
               </div>
             {% endif %}
