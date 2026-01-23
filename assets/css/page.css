@@ -1,8 +1,12 @@
 .hhri-theme-sections {
   display: flex;
   flex-wrap: wrap;
-  padding-block: 24px:
+  padding-block: 24px;
 }
 .hhri-theme-section {
+  padding-block-start: 24px;
   inline-size: 320px;
+}
+.micl-heading {
+  white-space: normal;
 }
