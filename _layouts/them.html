@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>MHHRI | {{ page.title }}</title>
+    <meta name="description" content="{{ page.title }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="alternate" hreflang="en" href="https://henkpb.github.io/hhri/">
+    <link rel="alternate" hreflang="es" href="https://henkpb.github.io/hhri/es">
+    <link rel="alternate" hreflang="x-default" href="https://henkpb.github.io/hhri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/micl.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+  </head>
+  <body class="micl-window dark">
+    <main class="micl-body">
+      <section class="micl-pane">
+        <p class="md-sys-typescale-display-medium">{{ page.title }}</p>
+        <p class="md-sys-typescale-headline-medium">{{ page.subtitle }}</p>
+
+        <div>
+          {% for item in site.theme_gbv %}
+            {% if item.path contains 'definitions/' %}
+              <div class="micl-card-filled" tabindex="0">
+                <div class="micl-card__headline-m">
+                  <h2>{{ item.title }}</h2>
+                </div>
+                <p class="micl-card__supporting-text">{{ item.organization }}</p>
+                <div class="micl-card__content md-sys-typescale-body-medium">
+                  <span>{{ content }}</span>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div>
+          {% for item in site.theme_gbv %}
+            {% if item.path contains 'guidelines/' %}
+              <div class="micl-card-filled" tabindex="0">
+                <div class="micl-card__headline-m">
+                  <h2>{{ item.title }}</h2>
+                </div>
+                <p class="micl-card__supporting-text">{{ item.organization }}</p>
+                <div class="micl-card__content md-sys-typescale-body-medium">
+                  <span>{{ content }}</span>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
