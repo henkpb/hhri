@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/micl.css">
     <link rel="stylesheet" href="assets/css/hhri.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/page.css">
   </head>
   <body class="micl-window dark">
     <main class="micl-body">
@@ -21,10 +21,10 @@
         <p class="md-sys-typescale-display-medium">{{ page.title }}</p>
         <p class="md-sys-typescale-headline-medium">{{ page.subtitle }}</p>
 
-        <div>
+        <div class="hhri-theme-sections">
           {% for item in site.theme_gbv %}
             {% if item.path contains 'definitions/' %}
-              <div class="micl-card-filled" tabindex="0">
+              <div class="micl-card-filled hhri-theme-section" tabindex="0">
                 <div class="micl-card__headline-s">
                   <h2>{{ item.title }}</h2>
                 </div>
@@ -37,10 +37,10 @@
           {% endfor %}
         </div>
 
-        <div>
+        <div class="hhri-theme-sections">
           {% for item in site.theme_gbv %}
             {% if item.path contains 'guidelines/' %}
-              <div class="micl-card-filled" tabindex="0">
+              <div class="micl-card-filled hhri-theme-section" tabindex="0">
                 <div class="micl-card__headline-m">
                   <h2>{{ item.title }}</h2>
                 </div>
