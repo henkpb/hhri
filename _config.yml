@@ -6,6 +6,8 @@ collections_dir: content
 collections:
   news:
     output: true
+  theme_gbv:
+    output: true
 exclude:
   - README.md
   - "*/README.md"
