@@ -24,15 +24,17 @@
         <div class="hhri-theme-sections">
           {% for item in site.theme_gbv %}
             {% if item.path contains 'definitions/' %}
-              <div class="micl-card-filled hhri-theme-section" tabindex="0">
-                <div class="micl-card__headline-s">
-                  <h2>{{ item.title }}</h2>
-                </div>
-                <p class="micl-card__supporting-text">{{ item.organization }}</p>
+              <details class="micl-card-filled hhri-theme-section">
+                <summary>
+                  <span class="micl-card__headline-s">
+                    <span class="micl-heading">{{ item.title }}</span>
+                  </span>
+                  <span class="micl-card__subhead">{{ item.year }} | {{ item.organization }}</span>
+                </summary>
                 <div class="micl-card__content md-sys-typescale-body-medium">
                   <span>{{ item.content }}</span>
                 </div>
-              </div>
+              </details>
             {% endif %}
           {% endfor %}
         </div>
@@ -40,15 +42,17 @@
         <div class="hhri-theme-sections">
           {% for item in site.theme_gbv %}
             {% if item.path contains 'guidelines/' %}
-              <div class="micl-card-filled hhri-theme-section" tabindex="0">
-                <div class="micl-card__headline-m">
-                  <h2>{{ item.title }}</h2>
-                </div>
-                <p class="micl-card__supporting-text">{{ item.organization }}</p>
+              <details class="micl-card-filled hhri-theme-section">
+                <summary>
+                  <span class="micl-card__headline-s">
+                    <span class="micl-heading">{{ item.title }}</span>
+                  </span>
+                  <span class="micl-card__subhead">{{ item.year }} | {{ item.organization }}</span>
+                </summary>
                 <div class="micl-card__content md-sys-typescale-body-medium">
                   <span>{{ item.content }}</span>
                 </div>
-              </div>
+              </details>
             {% endif %}
           {% endfor %}
         </div>
