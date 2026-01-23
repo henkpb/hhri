@@ -1,0 +1,6 @@
+.hhri-theme-sections {
+  display: flex;
+}
+.hhri-theme-section {
+  max-inline-size: 320px;
+}
