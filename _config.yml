@@ -10,6 +10,44 @@ collections:
     output: true
   theme_children:
     output: true
+  theme_ptsd:
+    output: true
+  theme_refugees:
+    output: true
+  theme_postconflict:
+    output: true
+  theme_torture:
+    output: true
+  theme_ethics:
+    output: true
+  theme_helpers:
+    output: true
+  theme_lgbtiq:
+    output: true
+  theme_humanright:
+    output: true
+  theme_disaster:
+    output: true
+  theme_survivors:
+    output: true
+  manual_women:
+    output: true
+  manual_children:
+    output: true
+  manual_men:
+    output: true
+  manual_vold:
+    output: true
+  resource_mhpss:
+    output: true
+  resource_ukraine:
+    output: true
+  resource_survivor:
+    output: true
+  resource_foundation:
+    output: true
+  etraining_gbv:
+    output: true
 exclude:
   - "README.md"
   - "*/README.md"
