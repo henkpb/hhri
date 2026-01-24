@@ -3,7 +3,7 @@ title: "Guidebook on State Obligations for Conflict-Related Sexual Violence"
 year: 2023
 organization: "Red Line Initiative"
 category: "Publication"
-country: "Global"
+countries: "Global"
 keywords: "gender based violence"
 link: "https://red-line-guidebook.netlify.app/"
 ---
