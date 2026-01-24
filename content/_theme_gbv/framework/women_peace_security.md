@@ -3,7 +3,7 @@ title: "Women, Peace and Security international policy framework – the resolut
 year: 2019
 organization: "Peace Women"
 category: "Publication"
-country: "Global"
+countries: "Global"
 keywords: "gender based violence | women rights"
 link: "https://www.unwomen.org/en/what-we-do/peace-and-security/global-norms-and-standards#:~:text=Other%20key%20documents-,Women%2C%20peace%20and%20security%20resolutions,post%2Dconflict%20peacebuilding%20and%20governance."
 ---
