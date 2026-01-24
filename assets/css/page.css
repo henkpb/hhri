@@ -8,10 +8,15 @@ h1 {
 h2 {
   margin-block: 0;
 }
+header {
+  padding-bottom: 16px;
+}
+
 .hhri-theme-sections {
   display: flex;
   flex-wrap: wrap;
-  padding-block: 24px;
+  border-radius: 12px;
+  padding: 24px;
   background-color: var(--md-sys-color-secondary-fixed-dim);
 }
 .hhri-theme-section {
@@ -20,7 +25,7 @@ h2 {
   inline-size: calc((1600px - (3 * 8px)) / 4);
   background-color: var(--md-sys-color-secondary-container);
 }
-.hhri-theme-section a.micl-button-text-s {
+.hhri-theme-section .micl-button-text-s {
   margin-block-end: 6px;
   margin-inline-start: -12px;
 }
