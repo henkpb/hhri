@@ -3,7 +3,7 @@ title: "Resolution Texts and Translations - SR1325 and other women, peace and se
 year: 2019
 organization: "Peace Women"
 category: "Uncategorized"
-country: "Global"
+countries: "Global"
 keywords: "GBV | SGBV | UNSCR 1325 | Violence Against Women"
 link: "https://www.peacewomen.org/resolutions-texts-and-translations"
 ---
