@@ -8,6 +8,8 @@ collections:
     output: true
   theme_gbv:
     output: true
+  theme_children:
+    output: true
 exclude:
   - "README.md"
   - "*/README.md"
