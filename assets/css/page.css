@@ -18,6 +18,15 @@ h2 {
 }
 .micl-pane > header {
   display: flex;
+  align-items: center;
+  min-block-size: 240px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+.micl-pane > header > .hhri-icon {
+  font-size: 128px;
 }
 
 .hhri-theme-sections {
