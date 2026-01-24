@@ -21,11 +21,17 @@
         <p class="md-sys-typescale-display-medium">{{ page.title }}</p>
         <p class="md-sys-typescale-headline-medium">{{ page.subtitle }}</p>
 
-        {% assign sections = '/definitions/,/guidelines/,/framework/' | split: ',' %}
-        {% for section in sections %}
+        {% assign path_nodes = '/definitions/,/guidelines/,/framework/' | split: ',' %}
+        {% for path_node in path_nodes %}
+          {% assign section = path_node | remove: '/' %}
+          {% assign section_title = section | append: '_title' %}
+          {% assign section_text = section | append: '_text' %}
           <div class="hhri-theme-sections">
+            <h2>{{ page[section_title] }}</h2>
+            <p>{{ page[section_text] }}</p>
+            
             {% for item in site.theme_gbv %}
-              {% if item.path contains section %}
+              {% if item.path contains path_node %}
                 {% if item.title %}
                   <details class="micl-card-filled hhri-theme-section">
                     <summary>
