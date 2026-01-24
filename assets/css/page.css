@@ -3,9 +3,11 @@
 }
 .micl-card__headline-s .micl-heading {
   white-space: normal;
+  color: var(--md-sys-color-on-secondary-container);
 }
 .micl-card__content {
   padding-block: 0;
+  color: var(--md-sys-color-on-secondary-container);
 }
 
 h1 {
@@ -16,6 +18,7 @@ h2 {
 }
 header {
   padding-bottom: 16px;
+  color: var(--md-sys-color-on-secondary-fixed);
 }
 
 .hhri-theme-sections {
