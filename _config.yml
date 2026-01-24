@@ -1,13 +1,13 @@
-title: MHHRI
-description: Mental Health and Human Rights Info
-baseurl: /hhri
-url: https://henkpb.github.io/hhri
-collections_dir: content
+title: "MHHRI"
+description: "Mental Health and Human Rights Info"
+baseurl: "/hhri"
+url: "https://henkpb.github.io"
+collections_dir: "content"
 collections:
   news:
     output: true
   theme_gbv:
     output: true
 exclude:
-  - README.md
+  - "README.md"
   - "*/README.md"
