@@ -10,8 +10,9 @@
 .hhri-theme-section {
   --md-sys-divider-space: 8px;
   padding-block-start: 16px;
-  inline-size: 320px;
+  inline-size: calc(1600px - (3 * 8px));
 }
-.hhri-theme-section a {
+.hhri-theme-section a.micl-button-text-s {
   margin-block-end: 6px;
+  margin-inline-start: -12px;
 }
