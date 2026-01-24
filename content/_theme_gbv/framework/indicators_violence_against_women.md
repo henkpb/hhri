@@ -3,7 +3,7 @@ title: "Indicators on Violence Against Women and State Response"
 year: 2008
 organization: "Human Rights Council"
 category: "Publication"
-country: "Global"
+countries: "Global"
 keywords: "gender based violence | Violence Against Women | women rights"
 link: "https://www.un.org/womenwatch/daw/vaw/v-issues-focus.htm"
 ---
