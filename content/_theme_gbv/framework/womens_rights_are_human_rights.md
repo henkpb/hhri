@@ -3,7 +3,7 @@ title: "Women's Rights are Human Rights"
 year: 2014
 organization: "UN"
 category: "Publication"
-country: "Global"
+countries: "Global"
 keywords: "gender based violence | Violence Against Women | women rights"
 link: "https://www.ohchr.org/sites/default/files/Documents/Events/WHRD/WomenRightsAreHR.pdf"
 ---
