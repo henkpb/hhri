@@ -28,8 +28,8 @@ theme_list:
     icon: "\uE914"
     link: "content/page_theme_gbv"
   - title: Children in armed conflict
-    icon: "\uE902"
-    link:
+    icon: "&#xE902;"
+    link: content/page_theme_children
   - title: Post Traumatic Stress Disorder
     icon: "\uE923"
     link:
