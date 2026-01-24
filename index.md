@@ -26,7 +26,7 @@ theme_text: Covers the core topics of mental health and human rights violations 
 theme_list:
   - title: Gender Based Violence
     icon: "\uE914"
-    link: "page"
+    link: "content/page_theme_gbv"
   - title: Children in armed conflict
     icon: "\uE902"
     link:
