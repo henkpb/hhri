@@ -27,8 +27,10 @@
           {% assign section_title = section | append: '_title' %}
           {% assign section_text = section | append: '_text' %}
           <div class="hhri-theme-sections">
-            <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
-            <span class="md-sys-typescale-body-large">{{ page[section_text] }}</span>
+            <header>
+              <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
+              <span class="md-sys-typescale-body-large">{{ page[section_text] }}</span>
+            </header>
             
             {% for item in site.theme_gbv %}
               {% if item.path contains path_node %}
