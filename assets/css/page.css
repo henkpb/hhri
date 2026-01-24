@@ -1,3 +1,6 @@
+.micl-pane {
+  row-gap: 24px;
+}
 .micl-card__headline-s .micl-heading {
   white-space: normal;
 }
