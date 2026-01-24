@@ -34,7 +34,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   border-radius: 12px;
-  padding: 24px;
+  padding: var(--md-sys-layout-window-margin);
   background-color: var(--md-sys-color-secondary-fixed-dim);
 }
 .hhri-theme-sections > header {
@@ -44,7 +44,7 @@ h2 {
 .hhri-theme-section {
   --md-sys-divider-space: 8px;
   padding-block-start: 16px;
-  inline-size: calc((1600px - (2 * 24px) - (3 * 8px)) / 4);
+  inline-size: calc((1600px - (2 * var(--md-sys-layout-window-margin)) - (3 * 8px)) / 4);
   background-color: var(--md-sys-color-secondary-container);
 }
 .hhri-theme-section .micl-button-text-s {
