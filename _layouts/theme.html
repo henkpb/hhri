@@ -21,7 +21,7 @@
         <p class="md-sys-typescale-display-medium">{{ page.title }}</p>
         <p class="md-sys-typescale-headline-medium">{{ page.subtitle }}</p>
 
-        {% assign sections = 'definitions/,guidelines/,framework/' | split: ',' %}
+        {% assign sections = '/definitions/,/guidelines/,/framework/' | split: ',' %}
         {% for section in sections %}
           <div class="hhri-theme-sections">
             {% for item in site.theme_gbv %}
