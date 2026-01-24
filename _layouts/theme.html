@@ -26,7 +26,7 @@
           </div>
         </header>
 
-        {% assign path_nodes = '/definitions/,/guidelines/,/framework/' | split: ',' %}
+        {% assign path_nodes = 'page.paths' | split: ',' %}
         {% for path_node in path_nodes %}
           {% assign section = path_node | remove: '/' %}
           {% assign section_title = section | append: '_title' %}
