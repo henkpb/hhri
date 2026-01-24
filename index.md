@@ -1,89 +1,87 @@
 ---
 layout: home
-logo: /assets/images/logo.svg
-title: Mental Health and Human Rights Info
-subtitle1: We are a reliable source of information dealing with mental health in war and conflict areas.
-subtitle2: Search through our thematic pages and the database with guidelines, manuals, publications and more.
+logo: "/assets/images/logo.svg"
+title: "Mental Health and Human Rights Info"
+subtitle1: "We are a reliable source of information dealing with mental health in war and conflict areas."
+subtitle2: "Search through our thematic pages and the database with guidelines, manuals, publications and more."
 
-manual_title: Training Manuals
-manual_text: For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors.
+manual_title: "Training Manuals"
+manual_text: "For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors."
 manual_list:
-  - title: Women
-    icon: "\uE913"
+  - title: "Women"
+    icon: "&#xE913;"
     link:
-  - title: Children
-    icon: "\uE90d"
+  - title: "Children"
+    icon: "&#xE90d;"
     link:
-  - title: Boys and men
-    icon: "\uE90F"
+  - title: "Boys and men"
+    icon: "&#xE90F;"
     link:
-  - title: Kjønnsbasert vold
-    icon: "\uE910"
+  - title: "Kjønnsbasert vold"
+    icon: "&#xE910;"
     link:
 
-theme_title: Themes
-theme_text: Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas.
+theme_title: "Themes"
+theme_text: "Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas."
 theme_list:
-  - title: Gender Based Violence
-    icon: "\uE914"
+  - title: "Gender Based Violence"
+    icon: "&#xE914;"
     link: "content/page_theme_gbv"
-  - title: Children in armed conflict
+  - title: "Children in armed conflict"
     icon: "&#xE902;"
-    link: content/page_theme_children
-  - title: Post Traumatic Stress Disorder
-    icon: "\uE923"
+    link: "content/page_theme_children"
+  - title: "Post Traumatic Stress Disorder"
+    icon: "&#xE923;"
     link:
-  - title: Refugees and asylum seekers
-    icon: "\uE924"
+  - title: "Refugees and asylum seekers"
+    icon: "&#xE924;"
     link:
-  - title: Post Conflict Communities and Transitional Justice
-    icon: "\uE922"
+  - title: "Post Conflict Communities and Transitional Justice"
+    icon: "&#xE922;"
     link:
-  - title: Torture
-    icon: "\uE92C"
+  - title: "Torture"
+    icon: "&#xE92C;"
     link:
-  - title: Ethics in Psychosocial Work
-    icon: "\uE90A"
+  - title: "Ethics in Psychosocial Work"
+    icon: "&#xE90A;"
     link:
-  - title: Helping the helpers
-    icon: "\uE916"
+  - title: "Helping the helpers"
+    icon: "&#xE916;"
     link:
-  - title: LGBTIQ+ Rights
-    icon: "\uE91A"
+  - title: "LGBTIQ+ Rights"
+    icon: "&#xE91A;"
     link:
-  - title: Human Rights Defenders
-    icon: "\uE905"
+  - title: "Human Rights Defenders"
+    icon: "&#xE905;"
     link:
-  - title: Disaster
-    icon: "\uE906"
+  - title: "Disaster"
+    icon: "&#xE906;"
     link:
-  - title: Supporting Survivors of Human Rights Violations
-    icon: "\uE92B"
+  - title: "Supporting Survivors of Human Rights Violations"
+    icon: "&#xE92B;"
     link:
 
-resource_title: Other Resources
-resource_text: In this section you will find other resources related to current conflicts, cooperation and tools to help survivors.
+resource_title: "Other Resources"
+resource_text: "In this section you will find other resources related to current conflicts, cooperation and tools to help survivors."
 resource_list:
-  - title: 3rd Nordic MHPSS Conference Oslo 2026
-    icon: "\uE91D"
+  - title: "3rd Nordic MHPSS Conference Oslo 2026"
+    icon: "&#xE91D;"
     link:
-  - title: Ресурси психічного здоров’я
-    text: Ukraine Mental Health Resources
-    icon: "\uE915"
+  - title: "Ресурси психічного здоров’я"
+    text: "Ukraine Mental Health Resources"
+    icon: "&#xE915;"
     link:
-  - title: Are you a survivor?
-    icon: "\uE92A"
+  - title: "Are you a survivor?"
+    icon: "&#xE92A;"
     link:
-  - title: Children and War Foundation
-    icon: "\uE902"
+  - title: "Children and War Foundation"
+    icon: "&#xE902;"
     link:
 
-etraining_title: Online E-training
-etraining_text: You can now be self-trained and apply for a certificate for our 3 online trainings.
+etraining_title: "Online E-training"
+etraining_text: "You can now be self-trained and apply for a certificate for our 3 online trainings."
 etraining_list:
-  - title: GBV Manuals Online E-training
-    icon: "\uE907"
+  - title: "GBV Manuals Online E-training"
+    icon: "&#xE907;"
     link:
 ---
-
-This is the content
