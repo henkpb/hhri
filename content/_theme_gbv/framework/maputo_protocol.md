@@ -3,7 +3,7 @@ title: "‘The Maputo Protocol’ – Protocol to the African Charter on Human a
 year: 2021
 organization: "Equality Now"
 category: "Publication"
-country: "Africa | Global"
+countries: "Africa | Global"
 keywords: "gender based violence | Violence Against Women | women rights"
 link: "https://www.equalitynow.org/promoting_african_womens_rights/"
 ---
