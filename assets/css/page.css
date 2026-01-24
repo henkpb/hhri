@@ -2,10 +2,17 @@
   white-space: normal;
 }
 
+h1 {
+  margin-block: 48px 16px;
+}
+h2 {
+  margin-block: 0;
+}
 .hhri-theme-sections {
   display: flex;
   flex-wrap: wrap;
   padding-block: 24px;
+  background-color: var(--md-sys-color-secondary-fixed-dim);
 }
 .hhri-theme-section {
   --md-sys-divider-space: 8px;
