@@ -16,9 +16,8 @@ h1 {
 h2 {
   margin-block: 0 8px;
 }
-header {
-  padding-bottom: 16px;
-  color: var(--md-sys-color-on-secondary-fixed);
+.micl-pane > header {
+  display: flex;
 }
 
 .hhri-theme-sections {
@@ -27,6 +26,10 @@ header {
   border-radius: 12px;
   padding: 24px;
   background-color: var(--md-sys-color-secondary-fixed-dim);
+}
+.hhri-theme-sections > header {
+  padding-bottom: 16px;
+  color: var(--md-sys-color-on-secondary-fixed);
 }
 .hhri-theme-section {
   --md-sys-divider-space: 8px;
