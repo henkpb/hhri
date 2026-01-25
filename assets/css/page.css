@@ -4,6 +4,11 @@
 .micl-card__headline-s .micl-heading {
   white-space: normal;
   color: var(--md-sys-color-on-secondary-container);
+  font-family: var(--md-sys-typescale-emphasized-title-medium-font);
+  font-size: var(--md-sys-typescale-emphasized-title-medium-size);
+  line-height: var(--md-sys-typescale-emphasized-title-medium-line-height);
+  font-weight: var(--md-sys-typescale-emphasized-title-medium-weight);
+  letter-spacing: var(--md-sys-typescale-emphasized-title-medium-tracking);
 }
 .micl-card__content {
   padding-block: 0;
