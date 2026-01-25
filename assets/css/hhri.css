@@ -20,3 +20,14 @@
 a {
   text-decoration: none;
 }
+footer {
+  display: flex;
+  column-gap: 48px;
+  padding-block: 48px 24px;
+}
+footer > div:last-of-type {
+  min-inline-size: 40%;
+}
+footer p {
+  margin: 0;
+}
