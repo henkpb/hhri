@@ -42,10 +42,14 @@ h2 {
   color: var(--md-sys-color-on-secondary-fixed);
 }
 .hhri-theme-section {
+  --statelayer-color: var(--md-sys-color-on-secondary-container);
   --md-sys-divider-space: 8px;
-  padding-block-start: 16px;
+  --md-sys-divider-color: var(--md-sys-color-secondary-fixed-dim);
   inline-size: calc((1600px - (2 * var(--md-sys-layout-window-margin)) - (3 * 8px)) / 4);
   background-color: var(--md-sys-color-secondary-container);
+}
+.hhri-theme-section summary {
+  padding-block-start: 16px;
 }
 .hhri-theme-section .micl-button-text-s {
   margin-block-end: 6px;
