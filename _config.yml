@@ -1,7 +1,13 @@
 title: "MHHRI"
 description: "Mental Health and Human Rights Info"
+language: "en"
 baseurl: "/hhri"
 url: "https://henkpb.github.io"
+
+exclude:
+  - "README.md"
+  - "*/README.md"
+
 collections_dir: "content"
 collections:
   news:
@@ -48,6 +54,3 @@ collections:
     output: true
   etraining_gbv:
     output: true
-exclude:
-  - "README.md"
-  - "*/README.md"
