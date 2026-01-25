@@ -17,8 +17,8 @@ framework_text: "The different framework for addressing human rights and GBV inc
 gender_title: "Gender-based violence in war and conflict"
 gender_text: "Research and discussions shine a light on the relationship between mental health and gender-based violence (GBV), exploring how GBV is used as a weapon in war and conflict and emphasizing the need for specific actions to deal with the resulting mental health issues."
 
-feminicide_title: "Feminicide / Gender-Based Killing of Women"
-feminicide_text: "Femicide is defined as an intentional killing with a gender-related motivation. It reflects deep-rooted inequalities, discrimination, and violence perpetuated by harmful societal norms and structures."
+femicide_title: "Feminicide / Gender-Based Killing of Women"
+femicide_text: "Femicide is defined as an intentional killing with a gender-related motivation. It reflects deep-rooted inequalities, discrimination, and violence perpetuated by harmful societal norms and structures."
 
 gbvmen_title: "GBV against men and boys in war and conflict"
 gbvmen_text: "Male rape in war is often hidden and denied. When stories emerge, male survivors risk losing support and facing societal disdain. Publications that highlights the increasing occurrence of sexual violence against men in conflict and emphasizes the need to address it as a human rights violation."
