@@ -69,5 +69,16 @@
 
       </section>
     </main>
+    <footer>
+      <div>
+        <span>{{ site.data.footer.about_text }}</span>
+      </div>
+      <div>
+        <span>{{ site.data.footer.social_text }}</span>
+        {% for social in site.data.footer.social_links %}
+          <a href="{{ social.link }}" target="_blank" rel="noopener">{{ social.name }}</a>
+        {% endfor %}
+      </div>
+    </footer>
   </body>
 </html>
