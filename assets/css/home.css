@@ -2,6 +2,17 @@
   flex-direction: column;
   row-gap: 96px;
 }
+
+.micl-card__headline-s .micl-heading {
+  white-space: normal;
+  color: var(--md-sys-color-on-secondary-container);
+  font-family: var(--md-sys-typescale-emphasized-title-large-font);
+  font-size: var(--md-sys-typescale-emphasized-title-large-size);
+  line-height: var(--md-sys-typescale-emphasized-title-large-line-height);
+  font-weight: var(--md-sys-typescale-emphasized-title-large-weight);
+  letter-spacing: var(--md-sys-typescale-emphasized-title-large-tracking);
+}
+
 .micl-pane>.micl-pane__columns {
     column-gap: 64px;
 }
