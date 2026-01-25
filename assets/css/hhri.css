@@ -31,3 +31,7 @@ footer > div:last-of-type {
 footer p {
   margin: 0;
 }
+footer .hhri-icon {
+  font-size: 32px;
+  color: var(--md-sys-color-primary);
+}
