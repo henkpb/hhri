@@ -6,23 +6,20 @@
   font-display: swap;
 }
 
-.micl-window {
-  max-inline-size: 1600px;
-  margin-inline: auto;
-}
-
 .hhri-icon {
   font-family: 'hhri';
   font-size: 56px;
   color: var(--md-sys-color-on-surface);
 }
 
-a {
-  text-decoration: none;
+.micl-window {
+  max-inline-size: 1600px;
+  margin-inline: auto;
 }
+
 footer {
   display: flex;
-  column-gap: 48px;
+  column-gap: 96px;
   padding-block: 48px 24px;
 }
 footer > div:last-of-type {
