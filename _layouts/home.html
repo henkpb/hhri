@@ -198,12 +198,11 @@
       </div>
       <div>
         <p>{{ site.data.footer.social_text }}</p>
-        <ul>
-        {% for social in site.data.footer.social_links %}
-          <li>
-            <a href="{{ social.link }}" target="_blank" rel="noopener">{{ social.name }}"</a>
-          </li>
-        {% endfor %}
+        <div class="hhri-socials">
+          {% for social in site.data.footer.social_links %}
+            <a href="{{ social.link }}" target="_blank" class="micl-iconbutton-standard-s" aria-label="{{ social.name }}>{{ social.icon }}</a>
+          {% endfor %}
+        </div>
       </div>
     </footer>
   </body>
