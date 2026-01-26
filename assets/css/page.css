@@ -1,6 +1,12 @@
 .micl-pane {
   row-gap: 24px;
 }
+
+.micl-navigationrail__content .micl-button-text-s {
+  --micl-height: 56px;
+  text-decoration: none;
+}
+
 .micl-card__headline-s .micl-heading {
   white-space: normal;
   color: var(--md-sys-color-on-secondary-container);
