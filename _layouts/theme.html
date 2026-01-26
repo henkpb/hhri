@@ -20,7 +20,7 @@
     {% assign path_nodes = page.paths | split: ',' %}
 
     <nav id="hhrinavigation" class="micl-navigationrail">
-      <div clas="micl-navigationrail__content">
+      <div class="micl-navigationrail__content">
         {% for path_node in path_nodes %}
           {% assign section = path_node | remove: '/' %}
           {% assign section_title = section | append: '_title' %}
