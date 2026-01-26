@@ -19,15 +19,27 @@
 
 footer {
   display: flex;
+  flex-flow: row;
   column-gap: 96px;
   padding-block: 48px 24px;
   color: var(--md-sys-color-on-surface);
+
+  @media (max-width: 599px) {
+    flex-flow: column;
+  }
 }
 footer p {
   margin: 0;
+  margin-inline-start: 12px;
+}
+footer > div:first-of-type {
+  margin-block-end: 24px;
 }
 footer > div:last-of-type {
   min-inline-size: 40%;
+}
+footer .hhri-socials {
+  display: flex;
 }
 footer .hhri-socials a {
   align-content: center;
