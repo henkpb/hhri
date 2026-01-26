@@ -10,7 +10,7 @@
     <link rel="alternate" hreflang="es" href="https://henkpb.github.io/hhri/es">
     <link rel="alternate" hreflang="x-default" href="https://henkpb.github.io/hhri">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=menu,menu_open&amp;display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=article_shortcut,menu,menu_open&amp;display=block">
     <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/micl.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/hhri.css' | relative_url }}">
@@ -30,6 +30,7 @@
           {% assign section_title = section | append: '_title' %}
           <input type="radio" id="navitem{{ forloop.index }}" name="navitem" value="">
           <label for="navitem{{ forloop.index }}" class="micl-navigationrail__item" tabindex="0">
+            <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">article_shortcut</span>
             <span class="micl-navigationrail__text">{{ page[section_title] }}</span>
           </label>
         {% endfor %}
