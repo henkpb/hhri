@@ -20,7 +20,7 @@
 
     {% assign path_nodes = page.paths | split: ',' %}
 
-    <dialog id="hhrinavigation" class="micl-navigationrail">
+    <dialog id="hhrinavigation" class="micl-navigationrail" popover>
       <div class="micl-navigationrail__headline">
         <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrinavigation" data-miclalt="menu_open">menu</button>
       </div>
@@ -39,7 +39,7 @@
     <main class="micl-body">
       <section class="micl-pane">
         <header>
-          <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="show-modal" commandfor="hhrinavigation">menu</button>
+          <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="show-popover" commandfor="hhrinavigation">menu</button>
           <div class="hhri-icon">{{ page.icon }}</div>
           <div>
             <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
