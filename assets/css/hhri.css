@@ -26,9 +26,10 @@ footer {
 footer p {
   margin: 0;
 }
-footer .hhri-socials {
+footer > div:last-of-type {
   min-inline-size: 40%;
 }
 footer .hhri-socials a {
+  font-family: 'hhri';
   font-size: 32px;
 }
