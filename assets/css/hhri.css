@@ -21,14 +21,14 @@ footer {
   display: flex;
   column-gap: 96px;
   padding-block: 48px 24px;
-}
-footer > div:last-of-type {
-  min-inline-size: 40%;
+  color: var(--md-sys-color-on-surface);
 }
 footer p {
   margin: 0;
 }
-footer .hhri-icon {
+footer .hhri-socials {
+  min-inline-size: 40%;
+}
+footer .hhri-socials a {
   font-size: 32px;
-  color: var(--md-sys-color-primary);
 }
