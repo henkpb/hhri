@@ -10,6 +10,7 @@
     <link rel="alternate" hreflang="es" href="https://henkpb.github.io/hhri/es">
     <link rel="alternate" hreflang="x-default" href="https://henkpb.github.io/hhri">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=menu,menu_open&amp;display=block">
     <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/micl.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/hhri.css' | relative_url }}">
@@ -19,7 +20,10 @@
 
     {% assign path_nodes = page.paths | split: ',' %}
 
-    <nav id="hhrinavigation" class="micl-navigationrail">
+    <dialog id="hhrinavigation" class="micl-navigationrail" closedby="closerequest">
+      <div class="micl-navigationrail__headline">
+        <button type="button class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" popovertarget="hhrinavigation" data-miclalt="menu_open">menu</button>
+      </div>
       <div class="micl-navigationrail__content">
         {% for path_node in path_nodes %}
           {% assign section = path_node | remove: '/' %}
@@ -30,11 +34,12 @@
           </label>
         {% endfor %}
       </div>
-    </nav>
+    </dialog>
 
     <main class="micl-body">
       <section class="micl-pane">
         <header>
+          <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" popovertarget="hhrinavigation">menu</button>
           <div class="hhri-icon">{{ page.icon }}</div>
           <div>
             <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
