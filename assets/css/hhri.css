@@ -30,6 +30,9 @@ footer > div:last-of-type {
   min-inline-size: 40%;
 }
 footer .hhri-socials a {
+  align-content: center;
   font-family: 'hhri';
   font-size: 32px;
+  text-decoration: none;
+  text-align: center;
 }
