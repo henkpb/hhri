@@ -31,7 +31,7 @@
           <input type="radio" id="navitem{{ forloop.index }}" name="navitem" value="">
           <label for="navitem{{ forloop.index }}" class="micl-navigationrail__item" tabindex="0">
             <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">article_shortcut</span>
-            <span class="micl-navigationrail__text">{{ page[section_title] }}</span>
+            <a href="#section{{ forloop.index }}" class="micl-navigationrail__text">{{ page[section_title] }}</a>
           </label>
         {% endfor %}
       </div>
@@ -52,7 +52,7 @@
           {% assign section = path_node | remove: '/' %}
           {% assign section_title = section | append: '_title' %}
           {% assign section_text = section | append: '_text' %}
-          <div class="hhri-theme-sections">
+          <div id="section{{ forloop.index}}" class="hhri-theme-sections">
             <header>
               <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
               <span class="md-sys-typescale-body-large">{{ page[section_text] }}</span>
