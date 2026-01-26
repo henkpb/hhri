@@ -28,11 +28,10 @@
         {% for path_node in path_nodes %}
           {% assign section = path_node | remove: '/' %}
           {% assign section_title = section | append: '_title' %}
-          <input type="radio" id="navitem{{ forloop.index }}" name="navitem" value="">
-          <label for="navitem{{ forloop.index }}" class="micl-navigationrail__item" tabindex="0">
+          <a href="#section{{ forloop.index }}" class="micl-button-text-s">
             <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">article_shortcut</span>
-            <a href="#section{{ forloop.index }}" class="micl-navigationrail__text">{{ page[section_title] }}</a>
-          </label>
+            <span>{{ page[section_title] }}</span>
+          </a>
         {% endfor %}
       </div>
     </dialog>
