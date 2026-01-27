@@ -6,6 +6,15 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .hhri-icon {
   font-family: 'hhri';
   font-size: 56px;
@@ -29,12 +38,15 @@
   inline-size: var(--hhri-card-width);
   row-gap: 24px;
   margin-top: 48px;
-  padding: 24px 16px;
+  padding: 32px 16px;
   border-radius: 12px;
   background-color: var(--md-sys-color-tertiary-container);
   color: var(--md-sys-color-on-tertiary-container);
 }
-.hhri-onpage a {
+.hhri-onpage p {
+  margin: 0;
+}
+.hhri-onpage a:not(:hover) {
   text-decoration: none;
 }
 
