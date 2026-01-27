@@ -27,7 +27,7 @@ h1 {
 h2 {
   margin-block: 0 8px;
 }
-.micl-pane > header {
+hgroup {
   display: flex;
   align-items: center;
   min-block-size: 240px;
@@ -37,7 +37,7 @@ h2 {
     flex-direction: column;
   }
 }
-.micl-pane > header > .hhri-icon {
+hgroup > .hhri-icon {
   font-size: 128px;
 }
 
