@@ -33,14 +33,16 @@
     {% assign path_nodes = page.paths | split: ',' %}
     <main class="micl-body">
       <section class="micl-pane">
-        <header>
-          <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="show-popover" commandfor="hhrinavigation">menu</button>
+        <header class="micl-appbar">
+          <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrinavigation">menu</button>
+        </header>
+        <div>
           <div class="hhri-icon">{{ page.icon }}</div>
           <div>
             <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
             <span class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
           </div>
-        </header>
+        </div>
 
         {% for path_node in path_nodes %}
           {% assign section = path_node | remove: '/' %}
