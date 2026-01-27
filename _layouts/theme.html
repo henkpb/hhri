@@ -18,24 +18,19 @@
   </head>
   <body class="micl-window dark">
 
-    {% assign path_nodes = page.paths | split: ',' %}
-
-    <dialog id="hhrinavigation" class="micl-navigationrail" popover>
+    <dialog id="hhrinavigation" class="micl-navigationrail" closedby="closerequest">
       <div class="micl-navigationrail__headline">
         <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrinavigation" data-miclalt="menu_open">menu</button>
       </div>
       <div class="micl-navigationrail__content">
-        {% for path_node in path_nodes %}
-          {% assign section = path_node | remove: '/' %}
-          {% assign section_title = section | append: '_title' %}
-          <a href="#section{{ forloop.index }}" class="micl-button-text-s">
-            <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">article_shortcut</span>
-            <span>{{ page[section_title] }}</span>
-          </a>
-        {% endfor %}
+        <button type="button" command="close" commandfor="hhrinavigation" onclick="window.location.href='www.nrk.no'" class="micl-button-text-s">
+          <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">favorite</span>
+          <span class="micl-navigationrail__text">Click me</span>
+        </button>
       </div>
     </dialog>
 
+    {% assign path_nodes = page.paths | split: ',' %}
     <main class="micl-body">
       <section class="micl-pane">
         <header>
@@ -87,6 +82,17 @@
           </div>
         {% endfor %}
 
+      </section>
+      <section class="micl-pane micl-pane--hidden-to-expanded">
+        <div class="hhri-onpage class="md-sys-typescale-body-large">
+          <p class="md-sys-typescale-title-large">On this page</p>
+
+          {% for path_node in path_nodes %}
+            {% assign section = path_node | remove: '/' %}
+            {% assign section_title = section | append: '_title' %}
+            <a href="#section{{ forloop.index }}">{{ page[section_title] }}</a>
+          {% endfor %}
+        </div>
       </section>
     </main>
 
