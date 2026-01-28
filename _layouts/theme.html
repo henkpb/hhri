@@ -28,7 +28,7 @@
           {% assign topic_title = topic | append: '_title' %}
           {% assign topic_list = topic | append: '_list' %}
           {% if site.data.menu[topic_title] %}
-            <span class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</span>
+            <p class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</p>
             {% if site.data.menu[topic_list] %}
               {% for item in site.data.menu[topic_list] %}
                 <button type="button" class="micl-button-text-s" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'">
