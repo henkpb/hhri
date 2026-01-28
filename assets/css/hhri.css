@@ -28,6 +28,10 @@ html {
   min-inline-size: var(--hhri-card-width);
 }
 
+.micl-navigationrail .micl-button__icon.hhri-icon {
+  font-weight: bold;
+}
+
 .hhri-onpage {
   position: fixed;
   display: flex;
