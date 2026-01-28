@@ -31,9 +31,9 @@
             <p>{{ site.data.menu[topic_title] }}</p>
             {% if site.data.menu[topic_list] %}
               {% for item in site.data.menu[topic_list] %}
-                <button type="button" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'" class="micl-button-text-s micl-navigationrail__item">
-                  <span class="micl-navigationrail__icon" aria-hidden="true">{{ item.icon }}</span>
-                  <span class="micl-navigationrail__text">{{ item.title }}</span>
+                <button type="button" class="micl-button-text-xs" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'">
+                  <span class="micl-button__icon" aria-hidden="true">{{ item.icon }}</span>
+                  <span>{{ item.title }}</span>
                 </button>
               {% endfor %}
             {% endif %}
