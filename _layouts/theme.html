@@ -32,7 +32,7 @@
             {% if site.data.menu[topic_list] %}
               {% for item in site.data.menu[topic_list] %}
                 <button type="button" class="micl-button-text-xs" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'">
-                  <span class="micl-button__icon" aria-hidden="true">{{ item.icon }}</span>
+                  <span class="micl-button__icon hhri-icon" aria-hidden="true">{{ item.icon }}</span>
                   <span>{{ item.title }}</span>
                 </button>
               {% endfor %}
