@@ -28,8 +28,15 @@ html {
   min-inline-size: var(--hhri-card-width);
 }
 
+.micl-navigationrail p {
+  margin-block: 24px 8px;
+}
 .micl-navigationrail .micl-button-text-s {
+  inline-size: 100%
+  justify-content: start;
   margin-block: 4px;
+  font-weight: normal;
+  text-align: start;
 }
 .micl-navigationrail .micl-button__icon.hhri-icon {
   font-weight: bold;
