@@ -28,11 +28,15 @@ html {
   min-inline-size: var(--hhri-card-width);
 }
 
+/*
+  Style adjustments to the main menu that is displayed inside a Navigation Rail component.
+  The menu items are buttons that act as navigational links.
+*/
 .micl-navigationrail p {
   margin-block: 24px 8px;
 }
 .micl-navigationrail .micl-button-text-s {
-  inline-size: 100%
+  inline-size: 100%;
   justify-content: start;
   margin-block: 4px;
   font-weight: normal;
