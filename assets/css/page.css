@@ -61,3 +61,7 @@ hgroup > .hhri-icon {
   margin-block-end: 6px;
   margin-inline-start: -12px;
 }
+.micl-list-item__image.hhri-icon {
+  font-size: 56px;
+  font-weight: bold;
+}
