@@ -18,15 +18,27 @@
   </head>
   <body class="micl-window dark">
 
-    <dialog id="hhrinavigation" class="micl-navigationrail" closedby="closerequest">
+    <dialog id="hhrimenu" class="micl-navigationrail" closedby="closerequest">
       <div class="micl-navigationrail__headline">
-        <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrinavigation" data-miclalt="menu_open">menu</button>
+        <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrimenu" data-miclalt="menu_open">menu</button>
       </div>
       <div class="micl-navigationrail__content">
-        <button type="button" command="close" commandfor="hhrinavigation" onclick="window.location.href='www.nrk.no'" class="micl-button-text-s">
-          <span class="micl-navigationrail__icon material-symbols-outlined" aria-hidden="true">favorite</span>
-          <span class="micl-navigationrail__text">Click me</span>
-        </button>
+        {% assign topics = 'manual|theme|resource|etraining' | split: '|' %}
+        {% for topic in topics %}
+          {% assign topic_title = topic | append: '_title' %}
+          {% assign topic_list = topic | append: '_list' %}
+          {% if site.data.menu[topic_title] %}
+            <p>{{ site.data.menu[topic_title] }}</p>
+            {% if site.data.menu[topic_list] %}
+              {% for item in site.data.menu[topic_list] %}
+                <button type="button" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'" class="micl-button-text-s micl-navigationrail__item">
+                  <span class="micl-navigationrail__icon" aria-hidden="true">{{ item.icon }}</span>
+                  <span class="micl-navigationrail__text">{{ item.title }}</span>
+                </button>
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
       </div>
     </dialog>
 
