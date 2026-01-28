@@ -63,7 +63,7 @@ resource_list:
   - title: "Ресурси психічного здоров’я"
     text: "Ukraine Mental Health Resources"
     icon: "&#xE915;"
-    link: "content/page_resource_urkraine"
+    link: "content/page_resource_ukraine"
   - title: "Are you a survivor?"
     icon: "&#xE92A;"
     link: "content/page_resource_survivor"
