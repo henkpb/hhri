@@ -28,6 +28,9 @@ html {
   min-inline-size: var(--hhri-card-width);
 }
 
+.micl-navigationrail .micl-button-text-s {
+  margin-block: 4px;
+}
 .micl-navigationrail .micl-button__icon.hhri-icon {
   font-weight: bold;
 }
