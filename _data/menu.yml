@@ -3,77 +3,77 @@ manual_text: "For you who are working with or assisting survivors of gender-base
 manual_list:
   - title: "Women"
     icon: "&#xE913;"
-    link:
+    link: "page_manual_women"
   - title: "Children"
     icon: "&#xE90D;"
-    link:
+    link: "page_manual_children"
   - title: "Boys and men"
     icon: "&#xE90F;"
-    link:
+    link: "page_manual_men"
   - title: "Kjønnsbasert vold"
     icon: "&#xE910;"
-    link:
+    link: "page_manual_vold"
 
 theme_title: "Themes"
 theme_text: "Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas."
 theme_list:
   - title: "Gender Based Violence"
     icon: "&#xE914;"
-    link: "content/page_theme_gbv"
+    link: "page_theme_gbv"
   - title: "Children in armed conflict"
     icon: "&#xE902;"
-    link: "content/page_theme_children"
+    link: "page_theme_children"
   - title: "Post Traumatic Stress Disorder"
     icon: "&#xE923;"
-    link:
+    link: "page_theme_ptsd"
   - title: "Refugees and asylum seekers"
     icon: "&#xE924;"
-    link:
+    link: "page_theme_refugees"
   - title: "Post Conflict Communities and Transitional Justice"
     icon: "&#xE922;"
-    link:
+    link: "page_theme_postconflict"
   - title: "Torture"
     icon: "&#xE92C;"
-    link:
+    link: "page_theme_torture"
   - title: "Ethics in Psychosocial Work"
     icon: "&#xE90A;"
-    link:
+    link: "page_theme_ethics"
   - title: "Helping the helpers"
     icon: "&#xE916;"
-    link:
+    link: "page_theme_helpers"
   - title: "LGBTIQ+ Rights"
     icon: "&#xE91A;"
-    link:
+    link: "page_theme_lgbtiq"
   - title: "Human Rights Defenders"
     icon: "&#xE905;"
-    link:
+    link: "page_theme_humanright"
   - title: "Disaster"
     icon: "&#xE906;"
-    link:
+    link: "page_theme_disaster"
   - title: "Supporting Survivors of Human Rights Violations"
     icon: "&#xE92B;"
-    link:
+    link: "page_theme_survivors"
 
 resource_title: "Other Resources"
 resource_text: "In this section you will find other resources related to current conflicts, cooperation and tools to help survivors."
 resource_list:
   - title: "3rd Nordic MHPSS Conference Oslo 2026"
     icon: "&#xE91D;"
-    link:
+    link: "page_resource_mhpss"
   - title: "Ресурси психічного здоров’я"
     text: "Ukraine Mental Health Resources"
     icon: "&#xE915;"
-    link:
+    link: "page_resource_urkraine"
   - title: "Are you a survivor?"
     icon: "&#xE92A;"
-    link:
+    link: "page_resource_survivor"
   - title: "Children and War Foundation"
     icon: "&#xE902;"
-    link:
+    link: "page_resource_foundation"
 
 etraining_title: "Online E-training"
 etraining_text: "You can now be self-trained and apply for a certificate for our 3 online trainings."
 etraining_list:
   - title: "GBV Manuals Online E-training"
     icon: "&#xE907;"
-    link:
+    link: "page_etraining_gbv"
