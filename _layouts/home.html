@@ -31,7 +31,7 @@
             <p class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</p>
             {% if site.data.menu[topic_list] %}
               {% for item in site.data.menu[topic_list] %}
-                <button type="button" class="micl-button-text-s" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link }}'">
+                <button type="button" class="micl-button-text-s" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link | relative_url }}'">
                   <span class="micl-button__icon hhri-icon" aria-hidden="true">{{ item.icon }}</span>
                   <span>{{ item.title }}</span>
                 </button>
