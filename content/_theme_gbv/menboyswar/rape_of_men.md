@@ -2,8 +2,8 @@
 title: "The rape of men: the darkest secret of war"
 year: 2011
 organization: "Will Storr, The Guardian"
-category: "Africa | Uganda"
-countries: "Global"
+category: "Publication"
+countries: "Africa | Uganda"
 keywords: "armed conflict | sexual violence | sexual violence against men | violence"
 link: "https://www.theguardian.com/society/2011/jul/17/the-rape-of-men"
 ---
