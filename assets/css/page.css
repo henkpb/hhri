@@ -58,8 +58,8 @@ hgroup > .hhri-icon {
   padding-block-start: 16px;
 }
 .hhri-theme-section .micl-button-text-s {
-  margin-block-end: 6px;
   margin-inline-start: -12px;
+  text-decoration: none;
 }
 .micl-list-item__image.hhri-icon {
   font-size: 56px;
