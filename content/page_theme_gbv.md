@@ -3,7 +3,7 @@ layout: theme
 icon: "&#xE914;"
 title: "Gender Based Violence"
 subtitle: "Violence against women, girls, men and boys manifests itself in physical, sexual and psychological forms. Even so, during times of instability, women and girls are disproportionately impacted by sexual and gender-based violence."
-paths: "/definitions/,/guidelines/,/framework/,/gender/,/femicide/,/gbvmen/"
+paths: "/definitions/,/guidelines/,/framework/,/gender/,/femicide/,/menboyswar/"
 
 definitions_title: "Definitions and terms"
 definitions_text: "Gender-based violence is violence directed against a person because of that person's gender or violence that affects persons of a particular gender disproportionately. It can include violence against women, men or children and LGBTQ+ people."
@@ -20,8 +20,8 @@ gender_text: "Research and discussions shine a light on the relationship between
 femicide_title: "Feminicide / Gender-Based Killing of Women"
 femicide_text: "Femicide is defined as an intentional killing with a gender-related motivation. It reflects deep-rooted inequalities, discrimination, and violence perpetuated by harmful societal norms and structures."
 
-gbvmen_title: "GBV against men and boys in war and conflict"
-gbvmen_text: "Male rape in war is often hidden and denied. When stories emerge, male survivors risk losing support and facing societal disdain. Publications that highlights the increasing occurrence of sexual violence against men in conflict and emphasizes the need to address it as a human rights violation."
+menboyswar_title: "GBV against men and boys in war and conflict"
+menboyswar_text: "Male rape in war is often hidden and denied. When stories emerge, male survivors risk losing support and facing societal disdain. Publications that highlights the increasing occurrence of sexual violence against men in conflict and emphasizes the need to address it as a human rights violation."
 
 engagingmen_title: "Engaging men"
 engagingmen_text: "Gender equality cannot be achieved without the involvement of men and boys. But change is slowly taking place, and men are increasingly working alongside women to support gender equality and the empowerment of women and girls."
