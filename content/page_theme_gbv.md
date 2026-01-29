@@ -3,7 +3,7 @@ layout: theme
 icon: "&#xE914;"
 title: "Gender Based Violence"
 subtitle: "Violence against women, girls, men and boys manifests itself in physical, sexual and psychological forms. Even so, during times of instability, women and girls are disproportionately impacted by sexual and gender-based violence."
-paths: "/definitions/,/guidelines/,/framework/,/gender/,/femicide/"
+paths: "/definitions/,/guidelines/,/framework/,/gender/,/femicide/,/gbvmen/"
 
 definitions_title: "Definitions and terms"
 definitions_text: "Gender-based violence is violence directed against a person because of that person's gender or violence that affects persons of a particular gender disproportionately. It can include violence against women, men or children and LGBTQ+ people."
