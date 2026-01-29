@@ -15,10 +15,6 @@ html {
   }
 }
 
-.hhri-icon {
-  font-family: 'hhri';
-}
-
 .micl-window {
   --hhri-card-width: calc((1600px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (4 * var(--md-sys-card-margin, 0px))) / 5);
   max-inline-size: 1600px;
@@ -29,23 +25,35 @@ html {
 }
 
 /*
+  Icons are stored in the hhri.ttf font file.
+*/
+.hhri-icon {
+  font-family: 'hhri';
+}
+
+/*
   Style adjustments to the main menu that is displayed inside a Navigation Rail component.
   The menu items are buttons that act as navigational links.
 */
-.micl-navigationrail p {
-  margin-block: 24px 8px;
-}
-.micl-navigationrail .micl-button-text-s {
-  inline-size: 100%;
-  justify-content: start;
-  margin-block: 4px;
-  font-weight: normal;
-  text-align: start;
-}
-.micl-navigationrail .micl-button__icon.hhri-icon {
-  font-weight: bold;
+.micl-navigationrail {
+  p {
+    margin-block: 24px 8px;
+  }
+  .micl-button-text-s {
+    inline-size: 100%;
+    justify-content: start;
+    margin-block: 4px;
+    font-weight: normal;
+    text-align: start;
+  }
+  .micl-button__icon.hhri-icon {
+    font-weight: bold;
+  }
 }
 
+/*
+ Styles for the "On This Page" box that displays anchor links to paragraphs on the page.
+*/
 .hhri-onpage {
   position: fixed;
   display: flex;
@@ -58,14 +66,18 @@ html {
   border-radius: 12px;
   background-color: var(--md-sys-color-tertiary-container);
   color: var(--md-sys-color-on-tertiary-container);
-}
-.hhri-onpage p {
-  margin: 0;
-}
-.hhri-onpage a:not(:hover) {
-  text-decoration: none;
+
+  p {
+    margin: 0;
+  }
+  a:not(:hover) {
+    text-decoration: none;
+  }
 }
 
+/*
+ The footer appears on every page.
+*/
 footer {
   display: flex;
   flex-flow: row;
@@ -76,24 +88,26 @@ footer {
   @media (max-width: 599px) {
     flex-flow: column;
   }
-}
-footer p {
-  margin: 0;
-  margin-inline-start: 12px;
-}
-footer > div:first-of-type {
-  margin-block-end: 24px;
-}
-footer > div:last-of-type {
-  min-inline-size: 40%;
-}
-footer .hhri-socials {
-  display: flex;
-}
-footer .hhri-socials a {
-  align-content: center;
-  font-family: 'hhri';
-  font-size: 32px;
-  text-decoration: none;
-  text-align: center;
+
+  &> div:first-of-type {
+    margin-block-end: 24px;
+  }
+  &> div:last-of-type {
+    min-inline-size: 40%;
+  }
+  p {
+    margin: 0;
+    margin-inline-start: 12px;
+  }
+  .hhri-socials {
+    display: flex;
+
+    a {
+      align-content: center;
+      font-family: 'hhri';
+      font-size: 32px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
 }
