@@ -1,6 +1,7 @@
 ---
 title: "Gender-related killings of women and girls (femicide/feminicide)"
 year: 2022
+organization: "UNOCD"
 category: "Publication"
 countries: "Global"
 keywords: "Femicides | gender based violence | Violence Against Women"
