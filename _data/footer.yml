@@ -1,7 +1,7 @@
 about_text: "Mental Health and Human Rights Info is a resource database providing free information about the consequences of human rights violations on mental health in the contexts of disaster, war and conflict."
 
 social_title: "Follow us:"
-social_links:
+social_list:
   - title: "Facebook"
     icon: "&#xE90B;"
     link: "https://www.facebook.com/HealthandHumanRightsInfo/"
