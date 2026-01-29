@@ -1,6 +1,7 @@
 ---
 title: "Killings of women and girls by their intimate partner or other family members"
 year: 2020
+organization: "UNOCD"
 category: "Publication"
 countries: "Global"
 keywords: "Femicides | gender based violence | Violence Against Women"
