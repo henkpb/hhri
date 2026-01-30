@@ -16,7 +16,7 @@ h1 {
   margin-block: 0 16px;
 }
 h2 {
-  margin-block: 0 8px;
+  margin-block: 0;
 }
 header:not(.micl-appbar) {
   display: flex;
@@ -38,13 +38,15 @@ header:not(.micl-appbar) {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  margin-block-start: 24px;
   background-color: inherit;
 }
 .hhri-theme-section {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 12px;
+  gap: 8px;
   padding: var(--md-sys-layout-window-margin);
+  border-radius: 12px;
   background-color: var(--md-sys-color-secondary-fixed-dim);
   color: var(--md-sys-color-on-secondary-fixed);
 
