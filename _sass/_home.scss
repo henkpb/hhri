@@ -66,8 +66,9 @@
     flex: 1;
     background-color: var(--md-sys-color-secondary-container);
   }
-  &> h2 {
+  h2 {
     white-space: normal;
+    color: var(--md-sys-color-on-secondary-container);
   }
   .micl-card__content {
     color: var(--md-sys-color-on-secondary-container);
