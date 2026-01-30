@@ -15,9 +15,6 @@
 h1 {
   margin-block: 0 16px;
 }
-h2 {
-  margin-block: 0;
-}
 header:not(.micl-appbar) {
   display: flex;
   align-items: center;
@@ -50,6 +47,9 @@ header:not(.micl-appbar) {
   background-color: var(--md-sys-color-secondary-fixed-dim);
   color: var(--md-sys-color-on-secondary-fixed);
 
+  > h2 {
+    margin-block: 0;
+  }
   > p {
     margin-block: 0 16px;
   }
