@@ -22,7 +22,7 @@ h1 {
 h2 {
   margin-block: 0 8px;
 }
-hgroup {
+header:not(.micl-appbar) {
   display: flex;
   align-items: center;
   min-block-size: 240px;
@@ -31,33 +31,35 @@ hgroup {
   @media (max-width: 600px) {
     flex-direction: column;
   }
-}
-hgroup > .hhri-icon {
-  font-size: 128px;
+
+  .hhri-icon {
+    font-size: 128px;
+  }
 }
 
-.hhri-theme-sections {
+.hhri-theme-section {
   display: flex;
   flex-wrap: wrap;
   border-radius: 12px;
   padding: var(--md-sys-layout-window-margin);
   background-color: var(--md-sys-color-secondary-fixed-dim);
-}
-.hhri-theme-sections > header {
-  padding-bottom: 16px;
   color: var(--md-sys-color-on-secondary-fixed);
+
+  > p {
+    margin-block: 0 16px;
+  }
 }
-.hhri-theme-section {
+.hhri-theme-item {
   --statelayer-color: var(--md-sys-color-on-secondary-container);
   --md-sys-divider-space: 8px;
   --md-sys-divider-color: var(--md-sys-color-secondary-fixed-dim);
   inline-size: var(--hhri-card-width);
   background-color: var(--md-sys-color-secondary-container);
 }
-.hhri-theme-section summary {
+.hhri-theme-item summary {
   padding-block-start: 16px;
 }
-.hhri-theme-section .micl-button-text-s {
+.hhri-theme-item .micl-button-text-s {
   margin-inline-start: -12px;
   text-decoration: none;
 }
