@@ -1,7 +1,3 @@
-.micl-pane {
-  row-gap: 24px;
-}
-
 .micl-card__headline-s .micl-heading {
   white-space: normal;
   color: var(--md-sys-color-on-secondary-container);
@@ -27,6 +23,7 @@ header:not(.micl-appbar) {
   align-items: center;
   min-block-size: 240px;
   column-gap: 16px;
+  color: var(--md-sys-color-on-surface);
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -37,6 +34,12 @@ header:not(.micl-appbar) {
   }
 }
 
+.hhri-theme-sections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  background-color: inherit;
+}
 .hhri-theme-section {
   display: flex;
   flex-wrap: wrap;
