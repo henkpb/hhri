@@ -16,7 +16,7 @@ html {
 }
 
 .micl-window {
-  --hhri-card-width: calc((1600px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (4 * var(--md-sys-card-margin, 0px))) / 5);
+  --hhri-card-width: calc((1600px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (3 * var(--md-sys-card-margin, 0px))) / 5);
   max-inline-size: 1600px;
   margin-inline: auto;
 }
