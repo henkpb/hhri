@@ -59,16 +59,14 @@
           {% assign section = path_node | remove: '/' %}
           {% assign section_title = section | append: '_title' %}
           {% assign section_text = section | append: '_text' %}
-          <div id="section{{ forloop.index}}" class="hhri-theme-sections">
-            <header>
-              <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
-              <span class="md-sys-typescale-body-large">{{ page[section_text] }}</span>
-            </header>
+          <div id="section{{ forloop.index}}" class="hhri-theme-section">
+            <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
+            <p class="md-sys-typescale-body-large">{{ page[section_text] }}</p>
             
             {% for item in site.theme_gbv %}
               {% if item.path contains path_node %}
                 {% if item.title %}
-                  <details class="micl-card-filled hhri-theme-section" tabindex="0">
+                  <details class="micl-card-filled hhri-theme-item" tabindex="0">
                     <summary>
                       <span class="micl-card__headline-s">
                         <span class="micl-heading md-sys-typescale-emphasized-headline-small">{{ item.title }}</span>
