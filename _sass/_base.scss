@@ -91,13 +91,18 @@ footer {
 
   &> div:first-of-type {
     margin-block-end: 24px;
+
+    p {
+      margin: 0;
+    }
   }
   &> div:last-of-type {
     min-inline-size: 40%;
-  }
-  p {
-    margin: 0;
-    margin-inline-start: 12px;
+
+    p {
+      margin: 0;
+      margin-inline-start: 12px;
+    }
   }
   .hhri-socials {
     display: flex;
