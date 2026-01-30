@@ -1,20 +1,3 @@
-.micl-card__headline-s .micl-heading {
-  white-space: normal;
-  color: var(--md-sys-color-on-secondary-container);
-  font-family: var(--md-sys-typescale-emphasized-title-medium-font);
-  font-size: var(--md-sys-typescale-emphasized-title-medium-size);
-  line-height: var(--md-sys-typescale-emphasized-title-medium-line-height);
-  font-weight: var(--md-sys-typescale-emphasized-title-medium-weight);
-  letter-spacing: var(--md-sys-typescale-emphasized-title-medium-tracking);
-}
-.micl-card__content {
-  padding-block: 0;
-  color: var(--md-sys-color-on-secondary-container);
-}
-
-h1 {
-  margin-block: 0 16px;
-}
 header:not(.micl-appbar) {
   display: flex;
   align-items: center;
@@ -28,6 +11,9 @@ header:not(.micl-appbar) {
 
   .hhri-icon {
     font-size: 128px;
+  }
+  h1 {
+    margin-block: 0 16px;
   }
 }
 
@@ -43,7 +29,7 @@ header:not(.micl-appbar) {
   flex-wrap: wrap;
   gap: 8px;
   padding: var(--md-sys-layout-window-margin);
-  border-radius: 12px;
+  border-radius: var(--md-sys-shape-corner-medium);
   background-color: var(--md-sys-color-secondary-fixed-dim);
   color: var(--md-sys-color-on-secondary-fixed);
 
@@ -54,21 +40,38 @@ header:not(.micl-appbar) {
     margin-block: 0 16px;
   }
 }
+
 .hhri-theme-item {
   --statelayer-color: var(--md-sys-color-on-secondary-container);
   --md-sys-divider-space: 8px;
   --md-sys-divider-color: var(--md-sys-color-secondary-fixed-dim);
   inline-size: var(--hhri-card-width);
   background-color: var(--md-sys-color-secondary-container);
-}
-.hhri-theme-item summary {
-  padding-block-start: 16px;
-}
-.hhri-theme-item .micl-button-text-s {
-  margin-inline-start: -12px;
-  text-decoration: none;
-}
-.micl-list-item__image.hhri-icon {
-  font-size: 56px;
-  font-weight: bold;
+
+  summary {
+    padding-block-start: var(--md-sys-card-content-padding-block);
+  
+    .micl-heading {
+      white-space: normal;
+      color: var(--md-sys-color-on-secondary-container);
+      font-family: var(--md-sys-typescale-emphasized-title-medium-font);
+      font-size: var(--md-sys-typescale-emphasized-title-medium-size);
+      line-height: var(--md-sys-typescale-emphasized-title-medium-line-height);
+      font-weight: var(--md-sys-typescale-emphasized-title-medium-weight);
+      letter-spacing: var(--md-sys-typescale-emphasized-title-medium-tracking);
+    }
+    .micl-card__supporting-text {
+      color: var(--md-sys-color-on-secondary-container);
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .micl-card__content {
+    color: var(--md-sys-color-on-secondary-container);
+  }
+  .micl-button-text-s {
+    margin-inline-start: -12px;
+    text-decoration: none;
+  }
 }
