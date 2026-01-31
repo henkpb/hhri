@@ -13,7 +13,7 @@
   letter-spacing: var(--md-sys-typescale-emphasized-title-large-tracking);
 }
 
-.hhri-title {
+header.hhri-title.micl-pane__columns {
   column-gap: 64px;
 
   &> .micl-pane__column:first-of-type {
@@ -26,13 +26,11 @@
     justify-content: flex-end;
     color: var(--md-sys-color-on-primary-container);
   }
-  div.micl-pane__column {
-    h1 {
-      margin-block: 24px;
-    }
-    p {
-      margin-block: 16px;
-    }
+  h1 {
+    margin-block: 24px;
+  }
+  p {
+    margin-block: 16px;
   }
 }
 
