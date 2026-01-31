@@ -45,7 +45,9 @@ header:not(.micl-appbar) {
   --statelayer-color: var(--md-sys-color-on-secondary-container);
   --md-sys-divider-space: 16px;
   --md-sys-divider-color: var(--md-sys-color-secondary-fixed-dim);
-  inline-size: var(--hhri-card-width);
+  flex: 1;
+  max-inline-size: 100%;
+  min-inline-size: min(300px, 100%);
   background-color: var(--md-sys-color-secondary-container);
 
   summary {
