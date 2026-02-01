@@ -41,6 +41,6 @@ children_text: "Protecting children's rights involves recognizing gender-specifi
 climate_title: "The Impact of Climate Change on Women's Lives"
 climate_text: "Climate change disproportionately affects women's mental health. Increased exposure to climate-related disasters, such as floods and droughts, can lead to trauma, anxiety, and depression, particularly for women in vulnerable communities."
 
-organizations_title: "Organisations and sites"
+organizations_title: "Organizations and sites"
 organizations_text: "Links to organizations and websites distributing information and working with survivors of GBV."
 ---
