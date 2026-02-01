@@ -10,7 +10,7 @@
     <link rel="alternate" hreflang="es" href="https://henkpb.github.io/hhri/es">
     <link rel="alternate" hreflang="x-default" href="https://henkpb.github.io/hhri">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=article_shortcut,menu,menu_open&amp;display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=home,menu,menu_open&amp;display=block">
     <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/micl.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -19,7 +19,8 @@
 
     <dialog id="hhrimenu" class="micl-navigationrail" closedby="closerequest">
       <div class="micl-navigationrail__headline">
-        <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrimenu">menu_open</button>
+        <button type="button" class="micl-iconbutton-standard-s material-symbols-outlined" command="close" commandfor="hhrimenu">menu_open</button>
+        <a href="{{ 'index.html' | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
       </div>
       <div class="micl-navigationrail__content">
         {% assign topics = 'manual|theme|resource|etraining' | split: '|' %}
