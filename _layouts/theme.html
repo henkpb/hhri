@@ -42,7 +42,7 @@
       </div>
     </dialog>
 
-    {% assign path_nodes = page.paths | split: ',' %}
+    {% assign sections = page.sections | split: ',' %}
     <main class="micl-body">
       <section class="micl-pane">
         <header class="micl-appbar">
@@ -57,15 +57,15 @@
         </header>
 
         <div class="hhri-theme-sections">
-          {% for path_node in path_nodes %}
-            {% assign section = path_node | remove: '/' %}
-            {% assign section_title = section | append: '_title' %}
-            {% assign section_text = section | append: '_text' %}
+          {% for section in sections %}
+            {% assign section_title = section | strip | append: '_title' %}
+            {% assign section_text = section | strip | append: '_text' %}
             <div id="section{{ forloop.index}}" class="hhri-theme-section">
               <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
               <p class="md-sys-typescale-body-large">{{ page[section_text] }}</p>
               
               {% for item in site.theme_gbv %}
+                {% assign path_node = section | strip | prepend: '/' | append: '/' %}
                 {% if item.path contains path_node %}
                   {% if item.title %}
                     <details class="micl-card-filled hhri-theme-item" tabindex="0">
@@ -101,9 +101,8 @@
         <div class="hhri-onpage" class="md-sys-typescale-body-large">
           <p class="md-sys-typescale-title-large">On this page</p>
 
-          {% for path_node in path_nodes %}
-            {% assign section = path_node | remove: '/' %}
-            {% assign section_title = section | append: '_title' %}
+          {% for section in sections %}
+            {% assign section_title = section | strip | append: '_title' %}
             <a href="#section{{ forloop.index }}" class="md-sys-typescale-body-large">{{ page[section_title] }}</a>
           {% endfor %}
         </div>
