@@ -64,7 +64,7 @@
               <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
               <p class="md-sys-typescale-body-large">{{ page[section_text] }}</p>
               
-              {% for item in site.theme_gbv %}
+              {% for item in site[page.collection] %}
                 {% assign path_node = section | strip | prepend: '/' | append: '/' %}
                 {% if item.path contains path_node %}
                   {% if item.title %}
