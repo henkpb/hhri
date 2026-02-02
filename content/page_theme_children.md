@@ -3,7 +3,7 @@ layout: theme
 icon: "&#xE902;"
 title: "Children in armed conflict"
 subtitle: "Children’s rights in conflict are often violated; their rights to be protected from violence, sexual abuse, terror and loss are disrupted. Under such conditions, practically all the necessary factors for child development are seriously harmed, and children may experience short- and/or long-term physical and/or psychological consequences."
-paths: ""
+sections: "guides, soldiers, mentalhealth, rehabilitation, humanrights, warborn, organizations"
 
 guides_title: "Guides and manuals"
 guides_text: "The experience of war often evokes a spectrum of emotions, such as anger, outrage, anxiety, sorrow, fear, and helplessness. Recognizing this emotional impact highlights the significance of addressing the needs of vulnerable groups, such as child soldiers, through comprehensive support and recovery."
