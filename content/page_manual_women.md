@@ -32,7 +32,7 @@ In each of the modules, you can select either the download format or the online 
 
 <!--more-->
 
-![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1200x675-c-default.png' | relative_url }}
+![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1200x675-c-default.png' | relative_url }})
 Some core elements of the manual
 
 - A human rights-based approach
@@ -46,7 +46,7 @@ Some core elements of the manual
 - Culturally sensitive
 - Tools – stabilization, and grounding exercises
 
-![MHHRI Certification]({{ '/assets/images/certificate-web-1200x675-c-default.png' | relative_url }}
+![MHHRI Certification]({{ '/assets/images/certificate-web-1200x675-c-default.png' | relative_url }})
 **Click here to access our self-study online training, and apply for a certificate.**
 
 To be able to obtain the MHHRI GBV training certificate, please submit your feedback regarding the training you have completed, including feedback on course structure and content. You can submit your feedback after [going through the manual](https://www.hhri.org/gbv-training-manual/) and [watching the tutorials](https://www.hhri.org/gbv-training-manual/tutorial/). In order to receive the certificate we anticipate that your reply reflects your understanding of the topics discussed. Please let us know that you have submitted the questionnaire by sending an e-mail to post@hhri.org
