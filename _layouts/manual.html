@@ -14,7 +14,7 @@ layout: default
     </div>
   </header>
 
-  {% assign parts = content | split: '' %}
+  {% assign parts = content | split: '<!--more-->' %}
   {% assign intro_text = parts[0] %}
   {% assign main_body = parts[1] %}
   <div>
