@@ -42,6 +42,6 @@ ul:has(img) {
     flex: 3;
   }
   > li:not(:has(img)) {
-    flex 2;
+    flex: 2;
   }
 }
