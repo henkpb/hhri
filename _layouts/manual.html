@@ -20,6 +20,25 @@ layout: default
   <div>
     {{ intro_text }}
   </div>
+
+  <div>
+    {% assign publications = 'manual,toolbox,flyer' | split: ',' %}
+    {% for publication in publications %}
+      {% assign publication_title = publication | append: '_title' %}
+      {% assign publication_text = publication | append: '_text' %}
+      {% if page[publication_title] and page[publication_text] %}
+        <div class="micl-card-filled">
+          <div class="micl-card__headline-s">
+            <h3>{{ page[publication_title] }}</h3>
+          </div>
+        </div>
+        <div class="micl-card__content md-sys-typescale-body-medium">
+          <p>{{ page[publication_text] }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
   <div>
     {{ main_body }}
   </div>
