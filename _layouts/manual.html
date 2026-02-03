@@ -43,9 +43,10 @@ layout: default
               <div class="micl-textfield-outlined">
                 <label for="{{ publication }}lan">Language</label>
                 <select id="{{ publication }}lan">
-                  {% for language in page[publication_languages] %}
-                    <option class="micl-list-item-one" value="language">
-                      <span class="micl-list-item__text">language</span>
+                  {% assign languages = page{publication_languages] | split: ',' %}
+                  {% for language in languages %}
+                    <option class="micl-list-item-one" value="{{ language | strip }}">
+                      <span class="micl-list-item__text">{{ language | strip }}</span>
                     </option>
                   {% endfor %}
                 </select>
