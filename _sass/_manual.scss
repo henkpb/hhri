@@ -30,24 +30,3 @@
     color: var(--md-sys-color-on-tertiary-container);
   }
 }
-
-ul:has(img) {
-  display: flex;
-  flex-flow: row;
-  column-gap: 24px;
-  margin-block: 24px;
-  padding: 0;
-  list-style: none;
-
-  > li:has(img) {
-    flex: 3;
-
-    img {
-      max-inline-size: 100%;
-    }
-  }
-  > li:not(:has(img)) {
-    flex: 2;
-    padding-block-start: 24px;
-  }
-}
