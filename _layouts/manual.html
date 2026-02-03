@@ -15,12 +15,12 @@ layout: default
   </header>
 
   {% assign parts = content | split: '' %}
-  {% assign intro = parts[0] %}
-  {% assign main  = parts[1] %}
+  {% assign intro_text = parts[0] %}
+  {% assign main_body = parts[1] %}
   <div>
-    {{ intro }}
+    {{ intro_text }}
   </div>
   <div>
-    {{ main }}
+    {{ main_body }}
   </div>
 </section>
