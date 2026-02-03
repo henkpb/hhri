@@ -32,19 +32,19 @@ In each of the modules, you can select either the download format or the online 
 
 <!--more-->
 
-![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1200x675-c-default.png' | relative_url }})
-Some core elements of the manual
-
-- A human rights-based approach
-- With a gender perspective
-- Mental health / psychological consequences of trauma
-- Resource-oriented (respect / opportunities / hope)
-- Focus on the helper
-- Metaphors, symbols, and stories
-- Psychoeducational approach
-- Own experiences and reactions / Body-oriented exercises
-- Culturally sensitive
-- Tools – stabilization, and grounding exercises
+| " " | " " |
+-------------
+| Some core elements of the manual | ![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1200x675-c-default.png' | relative_url }}) |
+| - A human rights-based approach |
+  - With a gender perspective
+  - Mental health / psychological consequences of trauma
+  - Resource-oriented (respect / opportunities / hope)
+  - Focus on the helper
+  - Metaphors, symbols, and stories
+  - Psychoeducational approach
+  - Own experiences and reactions / Body-oriented exercises
+  - Culturally sensitive
+  - Tools – stabilization, and grounding exercises
 
 ![MHHRI Certification]({{ '/assets/images/certificate-web-1200x675-c-default.png' | relative_url }})
 **Click here to access our self-study online training, and apply for a certificate.**
