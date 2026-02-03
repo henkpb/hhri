@@ -14,7 +14,7 @@ You can find the manual in each of these languages: English, Spanish, Russian, A
 
 In each of the modules, you can select either the download format or the online reading format. You can also find the manual and other support elements in different languages.
 
-### Main Content
+<!--more-->
 
 Click here to access our self-study online training, and apply for a certificate. 
 
