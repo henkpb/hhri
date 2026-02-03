@@ -40,6 +40,10 @@ ul:has(img) {
 
   > li:has(img) {
     flex: 3;
+
+    img {
+      max-inline-size: 100%;
+    }
   }
   > li:not(:has(img)) {
     flex: 2;
