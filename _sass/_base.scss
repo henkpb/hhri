@@ -76,22 +76,24 @@ html {
 }
 
 /*
- A list with two items (an image and a text block) are displayed next to each other.
+ A Markdown list with two items (an image and a text block) are displayed next to each other.
 */
 ul:has(img) {
   display: flex;
   flex-flow: row;
-  column-gap: 24px;
-  margin-block: 24px;
-  padding: 0;
+  column-gap: 48px;
+  margin-block: 48px;
+  padding: 16px;
   list-style: none;
+  background-color: var(--md-sys-color-secondary-container);
 
   > li {
-    flex: 2;
+    flex: 4;
     padding-block-start: 24px;
+    color: var(--md-sys-color-on-secondary-container);
   }
   > li:has(img) {
-    flex: 3;
+    flex: 5;
     padding-block-start: 0;
 
     img {
