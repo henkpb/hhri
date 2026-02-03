@@ -34,8 +34,9 @@
 ul:has(img) {
   display: flex;
   flex-flow: row;
-  column-gap: 12px;
+  column-gap: 24px;
   margin-block: 24px;
+  padding: 0;
   list-style: none;
 
   > li:has(img) {
@@ -47,5 +48,6 @@ ul:has(img) {
   }
   > li:not(:has(img)) {
     flex: 2;
+    padding-block-start: 24px;
   }
 }
