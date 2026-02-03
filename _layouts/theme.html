@@ -1,125 +1,68 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta charset="UTF-8">
-    <title>MHHRI | {{ page.title }}</title>
-    <meta name="description" content="{{ page.title }}">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="alternate" hreflang="en" href="https://henkpb.github.io/hhri/">
-    <link rel="alternate" hreflang="es" href="https://henkpb.github.io/hhri/es">
-    <link rel="alternate" hreflang="x-default" href="https://henkpb.github.io/hhri">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&amp;icon_names=home,menu,menu_open&amp;display=block">
-    <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/micl.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body class="micl-window dark">
+---
+layout: default
+---
 
-    <dialog id="hhrimenu" class="micl-navigationrail" closedby="closerequest">
-      <div class="micl-navigationrail__headline">
-        <button type="button" class="micl-iconbutton-standard-s material-symbols-outlined" command="close" commandfor="hhrimenu">menu_open</button>
-        <a href="{{ 'index.html' | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
-      </div>
-      <div class="micl-navigationrail__content">
-        {% assign topics = 'manual|theme|resource|etraining' | split: '|' %}
-        {% for topic in topics %}
-          {% assign topic_title = topic | append: '_title' %}
-          {% assign topic_list = topic | append: '_list' %}
-          {% if site.data.menu[topic_title] %}
-            <p class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</p>
-            {% if site.data.menu[topic_list] %}
-              {% for item in site.data.menu[topic_list] %}
-                <button type="button" class="micl-button-text-s" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link | relative_url }}'">
-                  <span class="micl-button__icon hhri-icon" aria-hidden="true">{{ item.icon }}</span>
-                  <span>{{ item.title }}</span>
-                </button>
-              {% endfor %}
+{% assign sections = page.sections | split: ',' %}
+<section class="micl-pane">
+  <header class="micl-appbar">
+    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
+  </header>
+  <header>
+    <div class="hhri-icon">{{ page.icon }}</div>
+    <div>
+      <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
+      <span class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
+    </div>
+  </header>
+
+  <div class="hhri-theme-sections">
+    {% for section in sections %}
+      {% assign section_title = section | strip | append: '_title' %}
+      {% assign section_text = section | strip | append: '_text' %}
+      <div id="section{{ forloop.index}}" class="hhri-theme-section">
+        <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
+        <p class="md-sys-typescale-body-large">{{ page[section_text] }}</p>
+        
+        {% for item in site[page.collection] %}
+          {% assign path_node = section | strip | prepend: '/' | append: '/' %}
+          {% if item.path contains path_node %}
+            {% if item.title %}
+              <details class="micl-card-filled hhri-theme-item" tabindex="0">
+                <summary>
+                  <span class="micl-card__headline-s">
+                    <span class="micl-heading md-sys-typescale-emphasized-headline-small">{{ item.title }}</span>
+                  </span>
+                  {% if item.year or item.organization %}
+                    <span class="micl-card__supporting-text">
+                      {{ item.year }}
+                      {% if item.year and item.organization %} | {% endif %}
+                      {{ item.organization }}
+                    </span>
+                  {% endif %}
+                </summary>
+                <div class="micl-card__content md-sys-typescale-body-medium">
+                  {{ item.content }}
+                  {% if item.link %}
+                    <hr class="micl-divider">
+                    <a href="{{ item.link }}" class="micl-button-text-s" target="_blank">View Source</a>
+                  {% endif %}
+                </div>
+              </details>
             {% endif %}
           {% endif %}
         {% endfor %}
       </div>
-    </dialog>
+    {% endfor %}
+  </div>
+</section>
 
-    {% assign sections = page.sections | split: ',' %}
-    <main class="micl-body">
-      <section class="micl-pane">
-        <header class="micl-appbar">
-          <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
-        </header>
-        <header>
-          <div class="hhri-icon">{{ page.icon }}</div>
-          <div>
-            <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
-            <span class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
-          </div>
-        </header>
+<section class="micl-pane micl-pane--hidden-to-expanded">
+  <div class="hhri-onpage" class="md-sys-typescale-body-large">
+    <p class="md-sys-typescale-title-large">On this page</p>
 
-        <div class="hhri-theme-sections">
-          {% for section in sections %}
-            {% assign section_title = section | strip | append: '_title' %}
-            {% assign section_text = section | strip | append: '_text' %}
-            <div id="section{{ forloop.index}}" class="hhri-theme-section">
-              <h2 class="md-sys-typescale-headline-large">{{ page[section_title] }}</h2>
-              <p class="md-sys-typescale-body-large">{{ page[section_text] }}</p>
-              
-              {% for item in site[page.collection] %}
-                {% assign path_node = section | strip | prepend: '/' | append: '/' %}
-                {% if item.path contains path_node %}
-                  {% if item.title %}
-                    <details class="micl-card-filled hhri-theme-item" tabindex="0">
-                      <summary>
-                        <span class="micl-card__headline-s">
-                          <span class="micl-heading md-sys-typescale-emphasized-headline-small">{{ item.title }}</span>
-                        </span>
-                        {% if item.year or item.organization %}
-                          <span class="micl-card__supporting-text">
-                            {{ item.year }}
-                            {% if item.year and item.organization %} | {% endif %}
-                            {{ item.organization }}
-                          </span>
-                        {% endif %}
-                      </summary>
-                      <div class="micl-card__content md-sys-typescale-body-medium">
-                        {{ item.content }}
-                        {% if item.link %}
-                          <hr class="micl-divider">
-                          <a href="{{ item.link }}" class="micl-button-text-s" target="_blank">View Source</a>
-                        {% endif %}
-                      </div>
-                    </details>
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endfor %}
-        </div>
-
-      </section>
-      <section class="micl-pane micl-pane--hidden-to-expanded">
-        <div class="hhri-onpage" class="md-sys-typescale-body-large">
-          <p class="md-sys-typescale-title-large">On this page</p>
-
-          {% for section in sections %}
-            {% assign section_title = section | strip | append: '_title' %}
-            <a href="#section{{ forloop.index }}" class="md-sys-typescale-body-large">{{ page[section_title] }}</a>
-          {% endfor %}
-        </div>
-      </section>
-    </main>
-
-    <footer class="md-sys-typescale-body-medium">
-      <div>
-        <p>{{ site.data.footer.about_text }}</p>
-      </div>
-      <div>
-        <div class="hhri-socials">
-          {% for social in site.data.footer.social_list %}
-            <a href="{{ social.link }}" target="_blank" class="micl-iconbutton-standard-m" aria-label="{{ social.title }}">{{ social.icon }}</a>
-          {% endfor %}
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+    {% for section in sections %}
+      {% assign section_title = section | strip | append: '_title' %}
+      <a href="#section{{ forloop.index }}" class="md-sys-typescale-body-large">{{ page[section_title] }}</a>
+    {% endfor %}
+  </div>
+</section>
