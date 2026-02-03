@@ -87,6 +87,10 @@ ul:has(img) {
   list-style: none;
   background-color: var(--md-sys-color-secondary-container);
 
+  @media (max-width: 599px) {
+    flex-flow: column;
+  }
+
   > li {
     flex: 4;
     padding-block-start: 24px;
