@@ -30,3 +30,18 @@
     color: var(--md-sys-color-on-tertiary-container);
   }
 }
+
+ul:has(img) {
+  display: flex;
+  flex-flow: row;
+  column-gap: 12px;
+  margin-block: 24px;
+  list-style: none;
+
+  > li:has(img) {
+    flex: 3;
+  }
+  > li:not(:has(img)) {
+    flex 2;
+  }
+}
