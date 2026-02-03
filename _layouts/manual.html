@@ -17,11 +17,11 @@ layout: default
   {% assign parts = content | split: '<!--more-->' %}
   {% assign intro_text = parts[0] %}
   {% assign main_body = parts[1] %}
-  <div>
+  <div class="md-sys-typescale-body-large">
     {{ intro_text }}
   </div>
 
-  <div>
+  <div class="hhri-manual-publications">
     {% assign publications = 'manual,toolbox,flyer' | split: ',' %}
     {% for publication in publications %}
       {% assign publication_title = publication | append: '_title' %}
@@ -39,7 +39,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <div>
+  <div class="md-sys-typescale-body-large">
     {{ main_body }}
   </div>
 </section>
