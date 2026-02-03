@@ -27,6 +27,8 @@ layout: default
       {% assign publication_title = publication | append: '_title' %}
       {% assign publication_icon = publication | append: '_icon' %}
       {% assign publication_text = publication | append: '_text' %}
+      {% assign publication_languages = publication | append: '_languages' %}
+
       {% if page[publication_title] and page[publication_text] %}
         <div class="micl-card-filled">
           <div class="micl-card__headline-s">
@@ -37,6 +39,18 @@ layout: default
           </div>
           <div class="micl-card__content md-sys-typescale-body-medium">
             <p>{{ page[publication_text] }}</p>
+            {% if page[publication_languages] %}
+              <div class="micl-textfield-outlined">
+                <label for="{{ publication }}lan">Language</label>
+                <select id="{{ publication }}lan">
+                  {% for language in page[publication_languages] %}
+                    <option class="micl-list-item-one" value="language">
+                      <span class="micl-list-item__text">language</span>
+                    </option>
+                  {% endfor %}
+                </select>
+              </div>
+            {% endif %}
           </div>
         </div>
       {% endif %}
