@@ -2,7 +2,6 @@
 title: "Stop the War on Children"
 year: 2019
 organization: "Save the Children, in collaboration with researchers from the Peace Research Institute Oslo (PRIO)"
-category: "Manuals and guidelines | Publication"
 countries: "Afghanistan | Central African Republic | Democratic Republic of Congo | Global | Iraq | Mali | Nigeria | Somalia | South Sudan | Syria | Yemen"
 keywords: "armed conflict | child soldiers | children | grave violations against children | human rights | impunity | internally displaced persons | mental health | sexual violence"
 link: "https://www.savethechildren.org/content/dam/usa/reports/ed-cp/stop-the-war-on-children-2019.pdf"
