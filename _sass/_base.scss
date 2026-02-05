@@ -101,6 +101,9 @@ ul:has(img) {
     img {
       max-inline-size: 100%;
     }
+    p {
+      margin: 0;
+    }
   }
 }
 
