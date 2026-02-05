@@ -8,11 +8,11 @@ html {
 }
 
 /*
- Limit the total width of pages to 1199px. Derive the default card width from this.
+ Limit the total width of pages to 1599px. Derive the default card width from this.
 */
 .micl-window {
-  --hhri-card-width: calc((1199px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (3 * var(--md-sys-card-margin, 0px))) / 5);
-  max-inline-size: 1199px;
+  --hhri-card-width: calc((1599px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (3 * var(--md-sys-card-margin, 0px))) / 5);
+  max-inline-size: 1599px;
   margin-inline: auto;
 }
 .micl-pane:last-of-type {
