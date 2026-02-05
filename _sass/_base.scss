@@ -77,7 +77,8 @@ ul:has(img) {
   flex-flow: row;
   column-gap: 48px;
   margin-block: 48px;
-  padding: 16px;
+  padding: var(--md-sys-padding-m);
+  border-radius: var(--md-sys-shape-corner-medium);
   list-style: none;
   background-color: var(--md-sys-color-secondary-container);
 
@@ -89,6 +90,9 @@ ul:has(img) {
     flex: 4;
     padding-block-start: 24px;
     color: var(--md-sys-color-on-secondary-container);
+
+    p {
+      margin-block: var(--md-sys-padding-m);
   }
   > li:has(img) {
     flex: 5;
