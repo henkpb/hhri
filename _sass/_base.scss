@@ -96,7 +96,6 @@ ul:has(img) {
   }
   > li:has(img) {
     flex: 5;
-    padding-block-start: 0;
 
     img {
       max-inline-size: 100%;
