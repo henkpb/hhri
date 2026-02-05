@@ -44,6 +44,7 @@ In each of the modules, you can select either the download format or the online 
   - Own experiences and reactions / Body-oriented exercises
   - Culturally sensitive
   - Tools – stabilization, and grounding exercises
+
 - ![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
 
 <!--separates the lists-->
