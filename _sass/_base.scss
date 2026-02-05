@@ -76,7 +76,7 @@ ul:has(img) {
   display: flex;
   flex-flow: row;
   column-gap: 48px;
-  margin-block: 48px;
+  margin-block: 0;
   padding: var(--md-sys-padding-m);
   border-radius: var(--md-sys-shape-corner-medium);
   list-style: none;
