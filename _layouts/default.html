@@ -33,10 +33,13 @@
               {% if site.data.menu[topic_list] %}
                 {% for item in site.data.menu[topic_list] %}
                   {% if item.title and item.link %}
-                    <button type="button" class="micl-button-text-s" command="close" commandfor="hhrimenu" onclick="window.location.href='{{ item.link | relative_url }}'">
-                      <span class="micl-button__icon hhri-icon" aria-hidden="true">{{ item.icon }}</span>
-                      <span>{{ item.title }}</span>
-                    </button>
+                    <input type="radio" id="topic{{ forloop.index }}" name="navtopic" value="topic{{ forloop.index }}">
+                    <label for="topic{{ forloop.index 00" class="micl-navigationrail__item" tabindex="0">
+                      <a href="{{ item.link | relative_url }}">
+                        <span class="micl-navigationrail__icon hhri-icon" aria-hidden="true">{{ item.icon }}</span>
+                        <span class="micl-navigationrail__text">{{ item.title }}</span>
+                      </a>
+                    </label>
                   {% endif %}
                 {% endfor %}
               {% endif %}
