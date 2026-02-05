@@ -17,48 +17,46 @@ layout: default
   {% assign parts = content | split: '<!--more-->' %}
   {% assign intro_text = parts[0] %}
   {% assign main_body = parts[1] %}
-  <div class="md-sys-typescale-body-large">
+  <div class="hhri-manual md-sys-typescale-body-large">
     {{ intro_text }}
-  </div>
 
-  <div class="hhri-manual-publications">
-    {% assign publications = 'manual,toolbox,flyer' | split: ',' %}
-    {% for publication in publications %}
-      {% assign publication_title = publication | append: '_title' %}
-      {% assign publication_icon = publication | append: '_icon' %}
-      {% assign publication_text = publication | append: '_text' %}
-      {% assign publication_languages = publication | append: '_languages' %}
-
-      {% if page[publication_title] and page[publication_text] %}
-        <div class="micl-card-filled">
-          <div class="micl-card__headline-s">
-            {% if page[publication_icon] %}
-              <span class="hhri-icon">{{ page[publication_icon] }}</span>
-            {% endif %}
-            <h3>{{ page[publication_title] }}</h3>
+    <div class="hhri-manual-publications">
+      {% assign publications = 'manual,toolbox,flyer' | split: ',' %}
+      {% for publication in publications %}
+        {% assign publication_title = publication | append: '_title' %}
+        {% assign publication_icon = publication | append: '_icon' %}
+        {% assign publication_text = publication | append: '_text' %}
+        {% assign publication_languages = publication | append: '_languages' %}
+  
+        {% if page[publication_title] and page[publication_text] %}
+          <div class="micl-card-filled">
+            <div class="micl-card__headline-s">
+              {% if page[publication_icon] %}
+                <span class="hhri-icon">{{ page[publication_icon] }}</span>
+              {% endif %}
+              <h3>{{ page[publication_title] }}</h3>
+            </div>
+            <div class="micl-card__content md-sys-typescale-body-medium">
+              <p>{{ page[publication_text] }}</p>
+              {% if page[publication_languages] %}
+                <div class="micl-textfield-outlined">
+                  <label for="{{ publication }}lan">Language</label>
+                  <select id="{{ publication }}lan">
+                    {% assign languages = page[publication_languages] | split: ',' %}
+                    {% for language in languages %}
+                      <option class="micl-list-item-one" value="{{ language | strip }}">
+                        <span class="micl-list-item__text">{{ language | strip }}</span>
+                      </option>
+                    {% endfor %}
+                  </select>
+                </div>
+              {% endif %}
+            </div>
           </div>
-          <div class="micl-card__content md-sys-typescale-body-medium">
-            <p>{{ page[publication_text] }}</p>
-            {% if page[publication_languages] %}
-              <div class="micl-textfield-outlined">
-                <label for="{{ publication }}lan">Language</label>
-                <select id="{{ publication }}lan">
-                  {% assign languages = page[publication_languages] | split: ',' %}
-                  {% for language in languages %}
-                    <option class="micl-list-item-one" value="{{ language | strip }}">
-                      <span class="micl-list-item__text">{{ language | strip }}</span>
-                    </option>
-                  {% endfor %}
-                </select>
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-  <div class="md-sys-typescale-body-large">
+        {% endif %}
+      {% endfor %}
+    </div>
+  
     {{ main_body }}
   </div>
 </section>
