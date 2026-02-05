@@ -34,21 +34,13 @@ html {
 }
 
 /*
-  Style adjustments to the main menu that is displayed inside a Navigation Rail component.
-  The menu items are buttons that act as navigational links.
+  Adjustments to the main menu that is displayed inside a Navigation Rail component.
 */
 .micl-navigationrail {
   p {
     margin-block: 24px 8px;
   }
-  .micl-button-text-s {
-    inline-size: 100%;
-    justify-content: start;
-    margin-block: 4px;
-    font-weight: normal;
-    text-align: start;
-  }
-  .micl-button__icon.hhri-icon {
+  .hhri-icon {
     font-weight: bold;
   }
 }
@@ -65,7 +57,7 @@ html {
   row-gap: 24px;
   margin-top: 48px;
   padding: 32px 16px;
-  border-radius: 12px;
+  border-radius: var(--md-sys-shape-corner-medium);
   background-color: var(--md-sys-color-tertiary-container);
 
   a, p {
