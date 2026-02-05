@@ -18,7 +18,9 @@ layout: default
   {% assign intro_text = parts[0] %}
   {% assign main_body = parts[1] %}
   <div class="hhri-manual md-sys-typescale-body-large">
-    {{ intro_text }}
+    <div>
+      {{ intro_text }}
+    </div>
 
     <div class="hhri-manual-publications">
       {% assign publications = 'manual,toolbox,flyer' | split: ',' %}
