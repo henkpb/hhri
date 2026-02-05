@@ -62,7 +62,7 @@ layout: default
 
     {% for section in sections %}
       {% assign section_title = section | strip | append: '_title' %}
-      <a href="#section{{ forloop.index }}" class="md-sys-typescale-body-large">{{ page[section_title] }}</a>
+      <a href="#section{{ forloop.index }}">{{ page[section_title] }}</a>
     {% endfor %}
   </div>
 </section>
