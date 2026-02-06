@@ -1,0 +1,25 @@
+publications: "kvinner, barn, men"
+
+kvinner_title: "Kvinner"
+kvinner_icon: "&#xE900;"
+kvinner_text: "Håndboken forklarer blant annet hvordan traumer påvirker den psykiske helsen. Den henviser til metoder og teknikker som kan brukes for å møte de psykologiske behovene til kvinner som har overlevd seksuell vold i krig og konflikt. Håndboken kan også være nyttig for folk som allerede har kunnskap og erfaring på feltet."
+kvinner_links:
+  - language: "Norwegian"
+    download: "https://www.hhri.org/wp-content/uploads/2024/05/hhri_2020_woman_norsk_p1.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2024/05/hhri_2020_women_NO_web-2024.pdf"
+
+barn_title: "Barn"
+barn_icon: "&#xE90D;"
+barn_text: "Denne håndboken er utviklet for hjelpere og hjelpearbeidere med retningslinjer for hvordan man kan gi kultursensitiv psykososial støtte til barn utsatt for seksuelle overgrep i krig, konflikt, humanitære kriser og lokalsamfunn med lave ressurser."
+barn_links:
+  - language: "Norwegian"
+    download: "https://www.hhri.org/wp-content/uploads/2025/03/Barn-utsatt-for-seksuell-vold_web.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2025/03/Barn-utsatt-for-seksuell-vold_web.pdf"
+
+men_title: "Gutter og menn"
+men_icon: "&#xE90F;"
+men_text: "Håndboken forklarer blant annet hvordan traumer påvirker den psykiske helsen. Den henviser til metoder og teknikker som kan brukes for å møte de psykologiske behovene til gutter og menn som har blitt utsatt for overgrep, illustrert gjennom sanne historier. Håndboken kan også være nyttig for folk som allerede har kunnskap og erfaring på feltet."
+men_links:
+  - language: "Norwegian"
+    download: "https://www.hhri.org/wp-content/uploads/2022/04/MHHRI_men_NOR_v5.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2022/04/MHHRI_men_NOR_v5.pdf"

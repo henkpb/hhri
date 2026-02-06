@@ -1,0 +1,37 @@
+publications: "manual, toolbox, flyer"
+
+manual_title: "Children GBV Manual"
+manual_icon: "&#xE911;"
+manual_text: "This handbook is developed for helpers and caregivers with guidelines on how to provide culturally sensitive psychosocial support to children exposed to sexual abuse in war, conflict, humanitarian crisis and low resource communities."
+manual_links:
+  - language: "English"
+    download: "https://www.hhri.org/wp-content/uploads/2023/10/817-HHRI_children_ENG_web.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2023/10/817-HHRI_children_ENG_web.pdf"
+  - language: "Norwegian"
+    download: "https://www.hhri.org/wp-content/uploads/2025/03/Barn-utsatt-for-seksuell-vold_web.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2025/03/Barn-utsatt-for-seksuell-vold_web.pdf"
+  - language: "Ukrainian"
+    download: "https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_UKR_web.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_UKR_web.pdf"
+  - language: "Nepalese"
+    download: "https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_Nepali_Sept.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_Nepali_Sept.pdf"
+
+toolbox_title: "Children GBV Toolbox"
+toolbox_icon: "&#xE912;"
+toolbox_text: "The children GBV toolbox is a collection of the tools presented in the training manual. The intention is to give you a small sized, easy to handle sample. It contains grounding exercises, four stories, window of tolerance and other tools."
+toolbox_links:
+  - language: "English"
+    download: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox-english.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox-english.pdf"
+  - language: "Ukrainian"
+    download: "https://www.hhri.org/wp-content/uploads/2025/11/Toolbox-Children-Ukrainian.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2025/11/Toolbox-Children-Ukrainian.pdf"
+
+flyer_title: "Children GBV Flyer"
+flyer_icon: "&#xE90C;"
+flyer_text: "The handbook is designed for those who work with or come into contact children who may have been subjected to sexual violence in connection with acts of war in conflict areas, humanitarian settings and poverty."
+flyer_links:
+  - language: "English"
+    download: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox.pdf"
+    view: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox.pdf"
