@@ -42,46 +42,44 @@ layout: default
               </div>
               <div class="micl-card__content md-sys-typescale-body-medium">
                 <p>{{ site.data[page.filename][publication_text] }}</p>
+                <div style="position:relative">
                 {% if site.data[page.filename][publication_view] %}
-                  <div style="position:relative">
-                    <button type="button" class="micl-button-outlined-m" popovertarget="menu{{ forloop.index }}">View</button>
-                    <nav id="menu{{ forloop.index }}" class="micl-menu" popover>
-                      <ul class="micl-list">
-                        {% for view in site.data[page.filename][publication_view] %}
-                          if {% if view.language and view.link %}
-                            <li class="micl-list-item-one" tabindex="0">
-                              <a href="{{ view.link }}" target="_blank">
-                                <span class="micl-list-item__text">
-                                  <span class="micl-list-item__headline">{{ view.language }}</span>
-                                </span>
-                              </a>
-                            </li>
-                          {% endif %}
-                        {% endfor %}
-                      </ul>
-                    </nav>
-                  </div>
+                  <button type="button" class="micl-button-outlined-m" popovertarget="menu{{ forloop.index }}">View</button>
+                  <nav id="menu{{ forloop.index }}" class="micl-menu" popover>
+                    <ul class="micl-list">
+                      {% for view in site.data[page.filename][publication_view] %}
+                        {% if view.language and view.link %}
+                          <li class="micl-list-item-one" tabindex="0">
+                            <a href="{{ view.link }}" target="_blank">
+                              <span class="micl-list-item__text">
+                                <span class="micl-list-item__headline">{{ view.language }}</span>
+                              </span>
+                            </a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </nav>
                 {% endif %}
                 {% if site.data[page.filename][publication_download] %}
-                  <div style="position:relative">
-                    <button type="button" class="micl-button-outlined-m" popovertarget="menu{{ forloop.index }}">View</button>
-                    <nav id="menu{{ forloop.index }}" class="micl-menu" popover>
-                      <ul class="micl-list">
-                        {% for download in site.data[page.filename][publication_download] %}
-                          if {% if download.language and download.link %}
-                            <li class="micl-list-item-one" tabindex="0">
-                              <a href="{{ download.link }}" download>
-                                <span class="micl-list-item__text">
-                                  <span class="micl-list-item__headline">{{ download.language }}</span>
-                                </span>
-                              </a>
-                            </li>
-                          {% endif %}
-                        {% endfor %}
-                      </ul>
-                    </nav>
-                  </div>
+                  <button type="button" class="micl-button-outlined-m" popovertarget="menu{{ forloop.index }}">Download</button>
+                  <nav id="menu{{ forloop.index }}" class="micl-menu" popover>
+                    <ul class="micl-list">
+                      {% for download in site.data[page.filename][publication_download] %}
+                        {% if download.language and download.link %}
+                          <li class="micl-list-item-one" tabindex="0">
+                            <a href="{{ download.link }}" download>
+                              <span class="micl-list-item__text">
+                                <span class="micl-list-item__headline">{{ download.language }}</span>
+                              </span>
+                            </a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </nav>
                 {% endif %}
+                </div>
               </div>
             </div>
           {% endif %}
