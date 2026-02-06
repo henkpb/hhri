@@ -46,6 +46,27 @@ html {
 }
 
 /*
+*/
+header:not(.micl-appbar) {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-block-end: 48px;
+  color: var(--md-sys-color-on-surface);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .hhri-icon {
+    font-size: 128px;
+  }
+  h1 {
+    margin-block: 0 16px;
+  }
+}
+
+/*
  Styles for the "On This Page" box that displays anchor links to paragraphs on the page.
 */
 .hhri-onpage {
