@@ -1,8 +1,8 @@
-topics: "manual, theme, resource, etraining"
+topics: "manuals, themes, resources, etrainings"
 
-manual_title: "Training Manuals"
-manual_text: "For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors."
-manual_list:
+manuals_title: "Training Manuals"
+manuals_text: "For you who are working with or assisting survivors of gender-based violence or involved in training of helpers working directly with survivors."
+manuals_list:
   - title: "Women"
     icon: "&#xE913;"
     link: "content/page_manual_women"
@@ -16,9 +16,9 @@ manual_list:
     icon: "&#xE910;"
     link: "content/page_manual_vold"
 
-theme_title: "Themes"
-theme_text: "Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas."
-theme_list:
+themes_title: "Themes"
+themes_text: "Covers the core topics of mental health and human rights violations in disaster, war, and conflict areas."
+themes_list:
   - title: "Gender Based Violence"
     icon: "&#xE914;"
     link: "content/page_theme_gbv"
@@ -56,9 +56,9 @@ theme_list:
     icon: "&#xE92B;"
     link: "content/page_theme_survivors"
 
-resource_title: "Other Resources"
-resource_text: "In this section you will find other resources related to current conflicts, cooperation and tools to help survivors."
-resource_list:
+resources_title: "Other Resources"
+resources_text: "In this section you will find other resources related to current conflicts, cooperation and tools to help survivors."
+resources_list:
   - title: "3rd Nordic MHPSS Conference Oslo 2026"
     icon: "&#xE91D;"
     link: "content/page_resource_mhpss"
@@ -73,9 +73,9 @@ resource_list:
     icon: "&#xE902;"
     link: "content/page_resource_foundation"
 
-etraining_title: "Online E-training"
-etraining_text: "You can now be self-trained and apply for a certificate for our 3 online trainings."
-etraining_list:
+etrainings_title: "Online E-training"
+etrainings_text: "You can now be self-trained and apply for a certificate for our 3 online trainings."
+etrainings_list:
   - title: "GBV Manuals Online E-training"
     icon: "&#xE907;"
     link: "content/page_etraining_gbv"

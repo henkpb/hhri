@@ -3,21 +3,7 @@ layout: manual
 icon: "&#xE913;"
 title: "Women"
 subtitle: "If you are working with or assisting women survivors of gender-based violence or involved in training of helpers working directly with survivors, this is a good resource for you."
-
-manual_title: "Women GBV Manual"
-manual_icon: "&#xE911;"
-manual_text: "The manual explains, among other things, how trauma affects mental health. It refers to methods and techniques that can be used to meet the psychological needs of women survivors of sexual abuse in contexts of war and conflict. The handbook can also be useful for people who already have knowledge and experience in the field."
-manual_languages: "English, Spanish, Korean, Romanian, Georgian, Turkish, Indonesian, Ukrainian, Norwegian"
-
-toolbox_title: "Women GBV Toolbox"
-toolbox_icon: "&#xE912;"
-toolbox_text: "The women GBV toolbox is a collection of the tools presented in the training manual. The intention is to give you a small sized, easy to handle sample. It contains grounding exercises, the story of the butterfly woman, window of tolerance and other tools."
-toolbox_languages: "English, Spanish, Russian, Arabic, Portuguese, Nepalese, Ukrainian, Mongolian, Norwegian"
-
-flyer_title: "Women GBV Flyer"
-flyer_icon: "&#xE90C;"
-flyer_text: "The manual is designed for those who work with or come into contact with women who may have been subjected to sexual violence in connection with acts of war, flight or in the country of reception. In addition to the manual, we introduce the GBV manual flyer."
-flyer_languages: "English, Spanish, Portuguese"
+name: "manual_women"
 ---
 
 Dear colleague, welcome to our Gender Based Violence Training Manual page.
