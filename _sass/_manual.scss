@@ -3,6 +3,14 @@
   flex-direction: column;
   row-gap: 48px;
   background-color: inherit;
+
+  .hhri-manual__intro {
+    max-inline-size: 839px;
+    padding: var(--md-sys-padding-m);
+    border-radius: var(--md-sys-shape-corner-medium);
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+  }
 }
 
 /**
