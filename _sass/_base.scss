@@ -99,10 +99,8 @@ header:not(.micl-appbar) {
     --md-sys-list-item-one-height: 48px;
     --md-sys-list-item-container-color: var(--md-sys-color-tertiary-container);
 
-    .micl-list-item-one {
-      .hhri-submenuitem {
-        padding-inline-start: var(--md-sys-padding-m);
-      }
+    .hhri-submenuitem {
+      padding-inline-start: var(--md-sys-padding-m);
     }
   }
 }
