@@ -5,7 +5,6 @@ layout: default
 <section class="micl-pane">
   <header class="micl-appbar">
     <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
-    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show" commandfor="hhrisidesheet">menu</button>
   </header>
   <header>
     <div class="hhri-icon">{{ page.icon }}</div>
@@ -91,7 +90,7 @@ layout: default
 
 {% if page.filename and site.data[page.filename].details_title %}
   <section class="micl-pane micl-pane--hidden-to-expanded">
-    <div class="hhri-onpage md-sys-typescale-body-large">
+    <div class="hhri-sidemenu md-sys-typescale-body-large">
       <p class="md-sys-typescale-title-large">{{ site.data[page.filename].details_title }}</p>
       {% if site.data[page.filename].details_menu %}
         <ul class="micl-list" role="listbox">
