@@ -59,10 +59,18 @@ layout: default
 <section class="micl-pane micl-pane--hidden-to-expanded">
   <div class="hhri-sidemenu md-sys-typescale-body-large">
     <h3 class="md-sys-typescale-title-large">On this page</h3>
-
-    {% for section in sections %}
-      {% assign section_title = section | strip | append: '_title' %}
-      <a href="#section{{ forloop.index }}">{{ page[section_title] }}</a>
-    {% endfor %}
+    <ul class="micl-list" role="listbox">
+      {% for section in sections %}
+        {% assign section_title = section | strip | append: '_title' %}
+        {% if page[section_title] %}
+          <li class="micl-list-item-one" tabindex="0">
+            <a href="#section{{ forloop.index }}">
+              <span class="micl-list-item__text">
+                <span class="micl-list-item__headline">{{ page[section_title] }}</span>
+              </span>
+            </a>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
 </section>
