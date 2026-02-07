@@ -17,18 +17,23 @@
  * The container that different publications for a manual.
  */
 .hhri-manual-publications {
-  display: flex;
+  display: grid;
   gap: 8px;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-  }
 
   &> div {
     flex: 1;
     padding-block-start: 16px;
     background-color: var(--md-sys-color-tertiary-container);
   }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+
+    &> div {
+      flex: auto;
+    }
+  }
+
   .hhri-icon {
     margin-inline-start: 16px;
     font-size: 56px;
