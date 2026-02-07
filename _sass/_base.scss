@@ -1,3 +1,6 @@
+/*
+ Use smooth scrolling when jumping to page anchors.
+ */
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +11,7 @@ html {
 }
 
 /*
- Limit the total width of pages to 1599px. Derive the default card width from this.
+ Limit the total width of pages to 1599px. Derive the default card width from this width.
 */
 .micl-window {
   --hhri-card-width: calc((1599px - var(--md-sys-layout-pane-spacer) - (2 * var(--md-sys-layout-window-margin)) - (3 * var(--md-sys-card-margin, 0px))) / 5);
@@ -36,9 +39,13 @@ html {
 /*
   Adjustments to the main menu that is displayed inside a Navigation Rail component.
 */
-.micl-navigationrail {
-  p {
+.micl-navigationrail__content {
+  h6 {
     margin-block: 24px 8px;
+
+    &:first-of-type {
+        margin-block-start: 0;
+    }
   }
   .hhri-icon {
     font-weight: bold;
@@ -46,6 +53,7 @@ html {
 }
 
 /*
+  The first <header> on a page contains the App Bar, the second the page title and icon.
 */
 header:not(.micl-appbar) {
   display: flex;
@@ -58,16 +66,16 @@ header:not(.micl-appbar) {
     flex-direction: column;
   }
 
-  .hhri-icon {
-    font-size: 128px;
-  }
   h1 {
     margin-block: 0 16px;
+  }
+  .hhri-icon {
+    font-size: 128px;
   }
 }
 
 /*
- Styles for the "On This Page" box that displays anchor links to paragraphs on the page.
+ Styles for the "On This Page" box that displays anchor links to anchors on the page.
 */
 .hhri-onpage {
   position: fixed;

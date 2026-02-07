@@ -21,7 +21,7 @@
     <dialog id="hhrimenu" class="micl-navigationrail" closedby="closerequest">
       <div class="micl-navigationrail__headline">
         <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrimenu">menu_open</button>
-        <a href="{{ '/index.html' | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
+        <a href="{{ '/' | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
       </div>
       <div class="micl-navigationrail__content">
         {% if site.data.menu.topics %}
@@ -30,7 +30,7 @@
             {% assign topic_title = topic | strip | append: '_title' %}
             {% assign topic_list = topic | strip | append: '_list' %}
             {% if site.data.menu[topic_title] %}
-              <p class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</p>
+              <h6 class="md-sys-typescale-title-large">{{ site.data.menu[topic_title] }}</h6>
               {% if site.data.menu[topic_list] %}
                 {% for item in site.data.menu[topic_list] %}
                   {% if item.title and item.link %}
