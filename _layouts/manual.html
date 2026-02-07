@@ -91,7 +91,7 @@ layout: default
 {% if page.filename and site.data[page.filename].details_title %}
   <section class="micl-pane micl-pane--hidden-to-expanded">
     <div class="hhri-sidemenu md-sys-typescale-body-large">
-      <p class="md-sys-typescale-title-large">{{ site.data[page.filename].details_title }}</p>
+      <h3 class="md-sys-typescale-title-large">{{ site.data[page.filename].details_title }}</h3>
       {% if site.data[page.filename].details_menu %}
         <ul class="micl-list" role="listbox">
           {% for menuitem in site.data[page.filename].details_menu %}

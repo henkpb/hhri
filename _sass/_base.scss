@@ -78,9 +78,6 @@ header:not(.micl-appbar) {
  Styles for the side-menu that displays links to detailed topics.
 */
 .hhri-sidemenu {
-  --md-sys-list-item-one-height: 48px;
-  --md-sys-list-item-container-color: var(--md-sys-color-tertiary-container);
-
   position: fixed;
   display: flex;
   box-sizing: border-box;
@@ -94,13 +91,19 @@ header:not(.micl-appbar) {
   background-color: var(--md-sys-color-tertiary-container);
 
   h3 {
+    padding-inline: 16px;
     margin: 0;
     color: var(--md-sys-color-on-tertiary-container);
   }
-  .micl-list-item-one {
+  .micl-list {
+    --md-sys-list-item-one-height: 48px;
+    --md-sys-list-item-container-color: var(--md-sys-color-tertiary-container);
+
+    .micl-list-item-one {
       .hhri-submenuitem {
-          padding-inline-start: var(--md-sys-padding-m);
+        padding-inline-start: var(--md-sys-padding-m);
       }
+    }
   }
 }
 
