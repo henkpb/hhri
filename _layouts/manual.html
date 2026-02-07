@@ -89,9 +89,46 @@ layout: default
   </div>
 </section>
 
-<section class="micl-pane micl-pane--hidden-to-expanded">
-  <div class="hhri-onpage md-sys-typescale-body-large">
-    <p class="md-sys-typescale-title-large">This Manual</p>
-
-  </div>
-</section>
+{% if page.filename and site.data[page.filename].details_title %}
+  <section class="micl-pane micl-pane--hidden-to-expanded">
+    <div class="hhri-onpage md-sys-typescale-body-large">
+      <p class="md-sys-typescale-title-large">{{ site.data[page.filename].details_title }}</p>
+      {% if site.data[page.filename].details_menu %}
+        <ul class="micl-list" role="listbox">
+          {% for menuitem in site.data[page.filename].details_menu %}
+            {% if menuitem.title %}
+              <li class="micl-list-item-one" tabindex="0">
+                {% if menuitem.link %}
+                  <a href="{{ menuitem.link }}">
+                {% endif %}
+                <span class="micl-list-item__text">
+                  <span class="micl-list-item__headline">{{ menuitem.title }}</span>
+                </span>
+                {% if menuitem.link %}
+                  </a>
+                {% endif %}
+              </li>
+              {% if menuitem.submenu %}
+                {% for subitem in menuitem.submenu %}
+                  {% if subitem.title %}
+                    <li class="micl-list-item-one hhri-submenuitem" tabindex="0">
+                      {% if subitem.link %}
+                        <a href="{{ subitem.link }}">
+                      {% endif %}
+                      <span class="micl-list-item__text">
+                        <span class="micl-list-item__headline">{{ subitem.title }}</span>
+                      </span>
+                      {% if subitem.link %}
+                        </a>
+                      {% endif %}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
