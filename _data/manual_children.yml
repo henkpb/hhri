@@ -35,3 +35,31 @@ flyer_links:
   - language: "English"
     download: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox.pdf"
     view: "https://www.hhri.org/wp-content/uploads/2025/11/The-Children-GBV-Toolbox.pdf"
+
+details_title: "This Manual"
+details_menu:
+  - title: About this manual
+    link: "https://www.hhri.org/children-manual/about-manual/"
+  - title: Resources
+    link: "https://www.hhri.org/children-manual/about-manual/resources/"
+    submenu:
+      - title: "The stories"
+        link: "https://www.hhri.org/children-manual/about-manual/resources/the-stories/"
+      - title: "Practical exercises"
+        link: "https://www.hhri.org/children-manual/about-manual/resources/practical-exercises/"
+      - title: "Human rights approach"
+        link: "https://www.hhri.org/children-manual/about-manual/resources/human-rights-approach/"
+      - title: "Window of tolerance"
+        link: "https://www.hhri.org/children-manual/about-manual/resources/window-of-tolerance/"
+      - title: "Helping the helpers"
+        link: "https://www.hhri.org/children-manual/about-manual/resources/helping-the-helpers/"
+  - title: "Lectures by Helen Christie"
+    link: "https://www.hhri.org/children-manual/about-manual/resources/tutorials/"
+  - title: "Manual children"
+    link: "https://www.hhri.org/children-manual/"
+  - title: "Lectures"
+    link: "https://www.hhri.org/lectures/"
+  - title: "GBV Training Manuals"
+    link: "https://www.hhri.org/gbv-training-manuals/"
+  - title: "GBV Online E-Training"
+    link: "https://www.hhri.org/onlineetraining/"

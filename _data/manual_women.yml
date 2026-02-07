@@ -83,7 +83,7 @@ details_menu:
   - title: About this manual
     link: "https://www.hhri.org/women-manual/about-manual/"
   - title: Resources
-    link: https://www.hhri.org/women-manual/resources/
+    link: "https://www.hhri.org/women-manual/resources/"
     submenu:
       - title: "Use of symbols and metaphors"
         link: "https://www.hhri.org/women-manual/resources/use-of-symbols/"

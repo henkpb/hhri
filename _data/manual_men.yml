@@ -68,3 +68,27 @@ flyer_links:
   - language: "Tamil"
     download: "https://www.hhri.org/wp-content/uploads/2023/10/Tamil-flyer-boys-and-men.pdf"
     view: "https://www.hhri.org/wp-content/uploads/2023/10/Tamil-flyer-boys-and-men.pdf"
+
+details_title: "This Manual"
+details_menu:
+  - title: About this manual
+    link: "https://www.hhri.org/boys-men-manual/about-handbook/"
+  - title: Resources
+    link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/"
+    submenu:
+      - title: "Grounding exercises"
+        link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/grounding-exercises/"
+      - title: "Human rights approach"
+        link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/human-rights-approach/"
+      - title: "Helping the helpers"
+        link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/helping-the-helpers/"
+  - title: "The stories"
+    link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/the-stories/"
+  - title: "Tutorials"
+    link: "https://www.hhri.org/boys-men-manual/about-handbook/resources/tutorials/"
+  - title: "Lectures"
+    link: "https://www.hhri.org/lectures/"
+  - title: "Grounding and the Window of Tolerance"
+    link: "https://www.hhri.org/understanding-how-we-react-to-stress-and-trauma-the-window-of-tolerance/"
+  - title: "GBV Training Manuals"
+    link: "https://www.hhri.org/gbv-training-manuals/"
