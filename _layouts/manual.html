@@ -5,6 +5,7 @@ layout: default
 <section class="micl-pane">
   <header class="micl-appbar">
     <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
+    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show" commandfor="hhrisidesheet">menu</button>
   </header>
   <header>
     <div class="hhri-icon">{{ page.icon }}</div>
@@ -86,4 +87,14 @@ layout: default
   
     {{ main_body }}
   </div>
+
+  <dialog id="hhrisidesheet" class="micl-sidesheet" popover open aria-labelledby="hhrisidesheet_title">
+    <div class="micl-sidesheet__headline">
+      <h2 id="hhrisidesheet_title">This Manual</h2>
+      <button type="button" class="micl-iconbutton-standard-s material-symbols-outlined" popovertarget="hhrisidesheet">close</button>
+    </div>
+    <div class="micl-sidesheet__content">
+      <p>This is the content of this.</p>
+    </div>
+  </dialog>
 </section>
