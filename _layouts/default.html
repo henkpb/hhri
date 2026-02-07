@@ -21,7 +21,7 @@
     <dialog id="hhrimenu" class="micl-navigationrail" closedby="closerequest">
       <div class="micl-navigationrail__headline">
         <button type="button" class="micl-iconbutton-standard-s micl-button--toggle material-symbols-outlined" command="close" commandfor="hhrimenu">menu_open</button>
-        <a href="{{ index.html | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
+        <a href="{{ '/index.html' | relative_url }}" class="micl-iconbutton-standard-s material-symbols-outlined">home</a>
       </div>
       <div class="micl-navigationrail__content">
         {% if site.data.menu.topics %}

@@ -17,7 +17,7 @@
  * The container that different publications for a manual.
  */
 .hhri-manual-publications {
-  display: grid;
+  display: flex;
   gap: 8px;
 
   &> div {
