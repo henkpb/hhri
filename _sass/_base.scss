@@ -99,8 +99,19 @@ header:not(.micl-appbar) {
     --md-sys-list-item-one-height: 48px;
     --md-sys-list-item-container-color: var(--md-sys-color-tertiary-container);
 
+    .micl-list-item__headline {
+      color: var(--md-sys-color-on-tertiary-container);
+    }
     .hhri-submenuitem {
       padding-inline-start: var(--md-sys-padding-m);
+
+      .micl-list-item__headline {
+        font-family: var(--md-sys-typescale-body-medium-font);
+        font-size: var(--md-sys-typescale-body-medium-size);
+        line-height: var(--md-sys-typescale-body-medium-line-height);
+        font-weight: var(--md-sys-typescale-body-medium-weight);
+        letter-spacing: var(--md-sys-typescale-body-medium-tracking);
+      }
     }
   }
 }
