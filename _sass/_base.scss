@@ -118,39 +118,29 @@ header:not(.micl-appbar) {
 }
 
 /*
- A Markdown list with two items (an image and a text block) are displayed next to each other.
+ A layout block with two items (an image and a text block) displayed next to each other.
 */
-ul:has(img) {
+.hhri-twocolumns {
   display: flex;
   flex-flow: row;
   column-gap: 48px;
-  margin-block: 0;
   padding: var(--md-sys-padding-m);
   border-radius: var(--md-sys-shape-corner-medium);
-  list-style: none;
-  background-color: var(--md-sys-color-secondary-container);
+  background-color: va(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
 
   @media (max-width: 599px) {
     flex-flow: column;
   }
 
-  > li {
+  >div:first-of-type {
     flex: 4;
-    color: var(--md-sys-color-on-secondary-container);
-
-    p {
-      margin-block: var(--md-sys-padding-m);
-    }
   }
-  > li:has(img) {
+  >div:last-of-type {
     flex: 5;
-
-    img {
-      max-inline-size: 100%;
-    }
-    p {
-      margin: 0;
-    }
+  }
+  img {
+    max-inline-size: 100%;
   }
 }
 
