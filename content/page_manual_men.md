@@ -17,7 +17,7 @@ For easy online access, navigate the [toolbox here](https://helpingboysandmen.wo
 <!--more-->
 
 <div class="hhri-twocolumns" markdown="1">
-  <div markdown="1">
+<div markdown="1">
 Some core elements of the manual
 - A human rights-based approach
 - With a gender perspective
@@ -29,8 +29,8 @@ Some core elements of the manual
 - Own experiences and reactions / Body-oriented exercises
 - Culturally sensitive
 - Tools – stabilization, and grounding exercises
-  </div>
-  <div markdown="1">
+</div>
+<div markdown="1">
 ![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
-  </div>
+</div>
 </div>
