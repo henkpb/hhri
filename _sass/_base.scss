@@ -92,7 +92,7 @@ header:not(.micl-appbar) {
   background-color: var(--md-sys-color-tertiary-container);
 
   h3 {
-    padding-inline: 16px;
+    padding-inline: var(--md-sys-padding-m);
     margin: 0;
     color: var(--md-sys-color-on-tertiary-container);
   }
@@ -126,7 +126,7 @@ header:not(.micl-appbar) {
   column-gap: 48px;
   padding: var(--md-sys-padding-m);
   border-radius: var(--md-sys-shape-corner-medium);
-  background-color: va(--md-sys-color-secondary-container);
+  background-color: var(--md-sys-color-secondary-container);
   color: var(--md-sys-color-on-secondary-container);
 
   @media (max-width: 599px) {
@@ -151,7 +151,7 @@ footer {
   display: flex;
   flex-flow: row;
   column-gap: 96px;
-  padding-block: 48px 24px;
+  padding-block: 48px var(--md-sys-padding-xl);
   color: var(--md-sys-color-on-surface);
 
   @media (max-width: 599px) {

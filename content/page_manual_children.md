@@ -14,23 +14,33 @@ In each of the boxes, you can choose either the download or online reading forma
 
 <!--more-->
 
-- Some core elements of the manual
-  - A human rights-based approach
-  - With a developmental perspective
-  - Mental health / psychological consequences of trauma
-  - Resource-oriented (respect / opportunities / hope)
-  - Focus on the helper
-  - Culturally sensitive
-  - Builds on experience and local knowledge
-  - Tool for training, supervision, group-work and self-study for helpers and caregivers
-  - Developed by clinicians but can be used without formal training
-  - Aims at being self-explanatory
-  - Tools – stabilization, and practical exercises
-- ![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
+<div class="hhri-twocolumns" markdown="1">
+<div markdown="1">
+Some core elements of the manual
+- A human rights-based approach
+- With a developmental perspective
+- Mental health / psychological consequences of trauma
+- Resource-oriented (respect / opportunities / hope)
+- Focus on the helper
+- Culturally sensitive
+- Builds on experience and local knowledge
+- Tool for training, supervision, group-work and self-study for helpers and caregivers
+- Developed by clinicians but can be used without formal training
+- Aims at being self-explanatory
+- Tools – stabilization, and practical exercises
+</div>
+<div markdown="1">
+![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
+</div>
+</div>
 
-<!--separates the lists-->
+<div class="hhri-twocolumns" markdown="1">
+<div markdown="1">
+![MHHRI Certification]({{ '/assets/images/certificate-web-939x646-c-default.png' | relative_url }})
+</div>
+<div markdown="1">
+**Click here to access our self-study online training, and apply for a certificate.**
 
-- ![MHHRI Certification]({{ '/assets/images/certificate-web-939x646-c-default.png' | relative_url }})
-- **Click here to access our self-study online training, and apply for a certificate.**
-
-  To be able to obtain the MHHRI GBV training certificate, please submit your feedback regarding the training you have completed, including feedback on course structure and content. You can submit your feedback after [going through the manual](https://www.hhri.org/gbv-training-manual/) and [watching the tutorials](https://www.hhri.org/gbv-training-manual/tutorial/). In order to receive the certificate we anticipate that your reply reflects your understanding of the topics discussed. Please let us know that you have submitted the questionnaire by sending an e-mail to post@hhri.org
+To be able to obtain the MHHRI GBV training certificate, please submit your feedback regarding the training you have completed, including feedback on course structure and content. You can submit your feedback after [going through the manual](https://www.hhri.org/gbv-training-manual/) and [watching the tutorials](https://www.hhri.org/gbv-training-manual/tutorial/). In order to receive the certificate we anticipate that your reply reflects your understanding of the topics discussed. Please let us know that you have submitted the questionnaire by sending an e-mail to post@hhri.org
+</div>
+</div>
