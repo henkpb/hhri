@@ -9,7 +9,6 @@ filename: "manual_children"
 Dear colleague, welcome to our website on sexual violence against children in war, conflict, humanitarian crisis and low-resource communities.
 
 If you are working with or assisting children exposed to sexual violence or involved in the training of helpers or caregivers working directly with child survivors, this is a good resource for you. We hope that this manual will be useful in your work and that you will benefit from the knowledge presented in it.
-The manual can be found in several languages: [English](https://www.hhri.org/wp-content/uploads/2023/10/817-HHRI_children_ENG_web.pdf), [Norwegian](https://www.hhri.org/wp-content/uploads/2025/03/Barn-utsatt-for-seksuell-vold_web.pdf), [Nepali](https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_Nepali_Sept.pdf) and [Ukrainian](https://www.hhri.org/wp-content/uploads/2023/10/HHRI_children_UKR_web.pdf).
 
 In each of the boxes, you can choose either the download or online reading format.
 
