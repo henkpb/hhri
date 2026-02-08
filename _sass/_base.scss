@@ -39,6 +39,10 @@ html {
 /*
   Adjustments to the main menu that is displayed inside a Navigation Rail component.
 */
+.micl-navigationrail__headline {
+  display: flex;
+  column-gap: 16px;
+}
 .micl-navigationrail__content {
   h6 {
     margin-block: 24px 8px;
