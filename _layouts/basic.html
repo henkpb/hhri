@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="micl-pane">
+  <header class="micl-appbar">
+    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
+  </header>
+  <header>
+    <div class="hhri-icon">{{ page.icon }}</div>
+    <div>
+      <h1 class="md-sys-typescale-display-large">{{ page.title }}</h1>
+      <span class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
+    </div>
+  </header>
+
+  <div class="hhri-basic md-sys-typescale-body-large">
+    {{ content }}
+  </div>
+</section>
