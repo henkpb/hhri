@@ -1,12 +1,12 @@
 ---
 layout: theme
 icon: "&#xE915;"
-title: "Ресурси психічного здоров’я - Ukraine Mental Health Resources"
-subtitle: "Вітаємо на нашій сторінці ресурсів з психічного здоров’я , де представлені публікації, інструменти, відео та ресурси, які надають психологічну підтримку в умовах війни та кризи. | Welcome to our Ukrainian mental health resource page with publications, tools, videos and resources that provide psychosocial support in war and crisis."
+title: "Ресурси психічного здоров’я<br>Ukraine Mental Health Resources"
+subtitle: "Вітаємо на нашій сторінці ресурсів з психічного здоров’я , де представлені публікації, інструменти, відео та ресурси, які надають психологічну підтримку в умовах війни та кризи.<br>Welcome to our Ukrainian mental health resource page with publications, tools, videos and resources that provide psychosocial support in war and crisis."
 collection: "resource_ukraine"
 sections: "resilience, training, uio, mhhri, collaboration, nrc, children, traumatized, veterans, resources"
 
-resilience_title: "Онлайн-фест “Стійкість у спротиві - Resilience in Resistance, Festival Compilation"
+resilience_title: "Онлайн-фест “Стійкість у спротиві<br>Resilience in Resistance, Festival Compilation"
 resilience_text: "Це унікальний онлайн-простір для тих, хто щодня допомагає іншим, але часто залишається без підтримки. Тут ви можете знайти всі відеоконференції, інформацію про спікерів та теми фестивалю. - Here you can find all the video conferences, panelists, and topics from the festival."
 
 training_title: "Гендерне насильство. Навчальні посібники. - Gender Based Violence Training Manuals"
