@@ -25,6 +25,17 @@
     <script src="https://unpkg.com/material-inspired-component-library@latest/dist/micl.js" defer></script>
     <script src="{{ '/assets/js/hhri.js' | relative_url }}" defer></script>
     <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js" defer></script>
+    <script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ "/search.json" | relative_url }}',
+      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+      noResultsText: 'No results found',
+      limit: 10,
+      fuzzy: false
+    })
+    </script>
   </head>
   <body class="micl-window light">
 

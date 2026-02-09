@@ -1,6 +1,5 @@
 ---
 title: "Підтримка у горі та втраті - Support in Grief and Loss"
-year: 
 organization: "AHALAR Centre, MHHRI"
 category: "Publication"
 countries: "Ukraine"

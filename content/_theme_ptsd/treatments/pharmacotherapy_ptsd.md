@@ -1,6 +1,5 @@
 ---
 title: "Pharmacotherapy for PTSD"
-year: 
 organization: ""
 category: "Publication"
 countries: "Global"
