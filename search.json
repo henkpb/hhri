@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+{% for page in site.pages %}
+    {% if page.title and page.path contains 'content/' %}
+      {
+        "title"    : {{ page.title | jsonify }},
+        "category" : "Article",
+        "url"      : "{{ page.url | relative_url }}",
+        "content"  : {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]
