@@ -18,7 +18,7 @@ uio_text: "Тут ви знайдете презентації PowerPoint для
 mhhri_title: "Відеоматеріали та презентації від колег - MHHRI Videos and presentations from MHHRI colleagues"
 mhhri_text: "У відео та презентаціях зібрана інфотмація експертами MHHRI про психічне здоров’я та порушення прав людини в зонах надзвичайних ситуацій, війни та конфліктів. - MHHRI experts gathered information about mental health and human rights violation in war and conflict areas in videos and presentations."
 
-collaboration_title: "Співпраця з АХАЛАР та МАРТ - Collaboration with AHALAR and NGO MART
+collaboration_title: "Співпраця з АХАЛАР та МАРТ - Collaboration with AHALAR and NGO MART"
 collaboration_text: "Ми провели вебінари, засновані на навчальному посібнику «Психічне здоров’я та гендерне насильство. Допомога жертвам сексуального насильства під час конфлікту». - We had online webinars based on the GBV training manual in cooperation with NGO MART and AHALAR and provided by our MHHRI experts."
 
 nrc_title: "Співпраця з Норвезькою радою у справах біженців - Collaboration with Norwegian Refugee Council"
