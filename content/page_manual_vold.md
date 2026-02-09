@@ -15,3 +15,5 @@ Her finner du blant annet tre håndbøker for arbeid med overlevere etter seksua
 I hver av boksene kan du velge enten nedlastingsformatet eller nettleseformatet.
 
 <!--more-->
+
+![Kjønnsbasert vold publikasjoner]({{ '/assets/images/Photo-export-1040x432-c-default.png' | relative_url }})

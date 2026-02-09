@@ -30,7 +30,7 @@ Some core elements of the manual
 - Tools – stabilization, and practical exercises
 </div>
 <div markdown="1">
-![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
+![Children GBV Publications]({{ '/assets/images/children-manual-pages-1122x488-c-default.png' | relative_url }})
 </div>
 </div>
 

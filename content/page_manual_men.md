@@ -31,6 +31,6 @@ Some core elements of the manual
 - Tools – stabilization, and grounding exercises
 </div>
 <div markdown="1">
-![Women GBV Publications]({{ '/assets/images/Women-manual-pages-1122x486-c-default.png' | relative_url }})
+![Boys and men GBV Publications]({{ '/assets/images/men-manual-pages-1-1135x508-c-default.png' | relative_url }})
 </div>
 </div>
