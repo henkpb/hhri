@@ -36,21 +36,9 @@ collections:
     output: true
   theme_survivors:
     output: true
-  manual_women:
-    output: true
-  manual_children:
-    output: true
-  manual_men:
-    output: true
-  manual_vold:
-    output: true
   resource_mhpss:
     output: true
   resource_ukraine:
     output: true
   resource_survivor:
-    output: true
-  resource_foundation:
-    output: true
-  etraining_gbv:
     output: true
