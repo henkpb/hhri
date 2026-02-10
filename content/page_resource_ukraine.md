@@ -13,7 +13,7 @@ training_title: "Гендерне насильство. Навчальні по�
 training_text: "Для тих, хто працює з людьми, що зазнали гендерного насильства, або проводить навчання фахівців, які безпосередньо працюють з постраждалими.<br>For you who are working with or assisting survivors of gender-based violence or involved in training helpers working directly with survivors."
 
 uio_title: "Співпраця з Університетом Осло<br>Collaboration with University of Oslo"
-uio_text: "Тут ви знайдете презентації PowerPoint для психологів та помічників, які були створені у співпраці з Університетом Осло та іншими організаціями.<br>Here you will find PowerPoints for psychologists and helpers made in collaboration with the University of Oslo and other organisations."
+uio_text: "Тут ви знайдете презентації PowerPoint для психологів та помічників, які були створені у співпраці з Університетом Осло та іншими організаціями.<br>Here you will find PowerPoints for psychologists and helpers made in collaboration with the University of Oslo and other organizations."
 
 mhhri_title: "Відеоматеріали та презентації від колег<br>MHHRI Videos and presentations from MHHRI colleagues"
 mhhri_text: "У відео та презентаціях зібрана інфотмація експертами MHHRI про психічне здоров’я та порушення прав людини в зонах надзвичайних ситуацій, війни та конфліктів.<br>MHHRI experts gathered information about mental health and human rights violation in war and conflict areas in videos and presentations."

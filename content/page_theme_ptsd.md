@@ -21,6 +21,6 @@ treatments_text: "Various treatments and approaches for PTSD are available, incl
 aspects_title: "Other aspects of PTSD"
 aspects_text: "Articles and publications exploring different aspects of PTSD, including its historical context, sociological impact, and the question of whether it is a disease or a normal reaction to catastrophes."
 
-organizations_title: "Organisations and sites"
-organizations_text: "Organisations and sites distributing information on Post Traumatic Stress Disorder."
+organizations_title: "Organizations and sites"
+organizations_text: "Organizations and sites distributing information on Post Traumatic Stress Disorder."
 ---

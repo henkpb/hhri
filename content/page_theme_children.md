@@ -24,6 +24,6 @@ humanrights_text: "A number of international conventions and laws have come into
 warborn_title: "Children born out of war"
 warborn_text: "The term “Children born of war” commonly refers to children who have one parent (usually the mother) that is a member of the local community and the other parent (usually the father) that is part of a foreign army or peacekeeping force."
 
-organizations_title: "Organisations working for and with child soldiers or children and war"
+organizations_title: "Organizations working for and with child soldiers or children and war"
 organizations_text: "There are many organizations working with child soldiers and children in war and conflict, trying to prevent children from being used in armed conflicts and supporting them in the aftermath. Most of these children suffer of severe posttraumatic stress, and need extra help."
 ---
