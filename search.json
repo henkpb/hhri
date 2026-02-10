@@ -2,14 +2,23 @@
 layout: null
 ---
 [
-{% for page in site.pages %}
-  {% if page.title and page.path contains 'content/' %}
-    {
-      "title"    : {{ page.title | jsonify }},
-      "category" : "Article",
-      "url"      : "{{ page.url | relative_url }}",
-      "content"  : {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
-    } {% unless forloop.last %},{% endunless %}
-  {% endif %}
-{% endfor %}
+  {% assign first_item = true %}
+  {% for page in site.pages %}
+    {% if page.title and page.path contains 'content/' %}
+      
+      {% comment %} If this isn't the first item, print a comma first {% endcomment %}
+      {% unless first_item %},{% endunless %}
+      
+      {
+        "title"    : {{ page.title | jsonify }},
+        "category" : "Article",
+        "url"      : "{{ page.url | relative_url }}",
+        "content"  : {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+      }
+      
+      {% comment %} Mark that we have printed at least one item {% endcomment %}
+      {% assign first_item = false %}
+      
+    {% endif %}
+  {% endfor %}
 ]
