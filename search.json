@@ -2,21 +2,38 @@
 layout: null
 ---
 [
+  {% comment %}
+    1. MERGE: Combine standalone Pages and Collection Documents into one list.
+  {% endcomment %}
+  {% assign all_content = site.pages | concat: site.documents %}
+
   {% assign first_item = true %}
-  {% for page in site.pages %}
-    {% if page.title and page.path contains 'content/' %}
+
+  {% for item in all_content %}
+    
+    {% comment %}
+      2. SAFETY CHECK:
+      - Must have a Title.
+      - Must have a URL (excludes collections with output: false).
+      - Must be an HTML file (excludes CSS, JS, images).
+    {% endcomment %}
+    {% if item.title and item.url and item.url contains '.html' %}
       
-      {% comment %} If this isn't the first item, print a comma first {% endcomment %}
+      {% comment %} Print comma only if this is NOT the first item {% endcomment %}
       {% unless first_item %},{% endunless %}
       
       {
-        "title"    : {{ page.title | jsonify }},
-        "category" : "Article",
-        "url"      : "{{ page.url | relative_url }}",
-        "content"  : {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+        "title"    : {{ item.title | jsonify }},
+        {% comment %}
+          "Category": If it belongs to a collection (e.g., 'manuals'), use that name.
+          Otherwise, default to "Page".
+        {% endcomment %}
+        "category" : {{ item.collection | default: "Page" | capitalize | jsonify }},
+        "url"      : "{{ item.url | relative_url }}",
+        "content"  : {{ item.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
       }
       
-      {% comment %} Mark that we have printed at least one item {% endcomment %}
+      {% comment %} Mark that we have printed an item {% endcomment %}
       {% assign first_item = false %}
       
     {% endif %}
