@@ -2,39 +2,23 @@
 layout: null
 ---
 [
-  {% comment %}
-    1. MERGE: Combine standalone Pages and Collection Documents into one list.
-  {% endcomment %}
   {% assign all_content = site.pages | concat: site.documents %}
-
   {% assign first_item = true %}
 
   {% for item in all_content %}
-    
-    {% comment %}
-      2. SAFETY CHECK:
-      - Must have a Title.
-      - Must have a URL (excludes collections with output: false).
-      - Must be an HTML file (excludes CSS, JS, images).
-    {% endcomment %}
-    {% if item.title and item.url and item.url contains '.html' %}
-      
+    {% if item.title and item.url contains '.html' %}
       {% unless first_item %},{% endunless %}
-      
       {
-        "title"    : {{ item.title | jsonify }},
-        {% comment %}
-          "Category": If it belongs to a collection (e.g., 'manuals'), use that name.
-          Otherwise, default to "Page".
-        {% endcomment %}
-        "category" : {{ item.collection | default: "Page" | capitalize | jsonify }},
-        "countries : {{ item.countries | jsonify }},
-        "url"      : "{{ item.url | relative_url }}",
-        "content"  : {{ item.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+        "title"       : {{ item.title | jsonify }},
+        "year"        : {{ item.year | default: "" | jsonify }},
+        "organization": {{ item.organization | default: "" | jsonify }},
+        "category"    : {{ item.category | default: "" | jsonify }},
+        "countries    : {{ item.countries | default: "" | jsonify }},
+        "keywords"    : {{ item.keywords | default: "" | jsonify }},
+        "link"        : {{ item.link | default: "" }},
+        "content"     : {{ item.content | jsonify }}
       }
-      
       {% assign first_item = false %}
-      
     {% endif %}
   {% endfor %}
 ]

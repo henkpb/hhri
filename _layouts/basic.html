@@ -19,7 +19,7 @@ layout: default
   </div>
 </section>
 
-<div class="search-container">
-  <input type="text" id="search-input" placeholder="Search blog posts...">
-  <ul id="results-container"></ul>
-</div>
+<form action="{{ '/search/' | relative_url }}" method="get">
+  <input type="text" name="q" placeholder="Search the database..." required>
+  <button type="submit">Search</button>
+</form>
