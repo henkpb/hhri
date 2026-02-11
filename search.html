@@ -10,7 +10,7 @@ permalink: /search/
   
   <hr>
 
-  <div id="full-results-container">
+  <div id="full-results-container" class="hhri-theme-section">
     <p>Loading results...</p>
   </div>
 </div>
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </span>
             </summary>
             <div class="micl-card__content md-sys-typescale-body-medium">
-              <p>${item.content}</p>
+              ${item.content.trim()}
               <hr class="micl-divider">
               <a href="${item.link}" class="micl-button-text-s" target="_blank">View Source</a>
             </div>
