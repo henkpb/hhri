@@ -13,7 +13,7 @@ layout: null
         "year"        : {{ item.year | default: "" | jsonify }},
         "organization": {{ item.organization | default: "" | jsonify }},
         "category"    : {{ item.category | default: "" | jsonify }},
-        "countries    : {{ item.countries | default: "" | jsonify }},
+        "countries"   : {{ item.countries | default: "" | jsonify }},
         "keywords"    : {{ item.keywords | default: "" | jsonify }},
         "link"        : {{ item.link | default: "" | jsonify }},
         "content"     : {{ item.content | jsonify }}
