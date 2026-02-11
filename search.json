@@ -15,7 +15,7 @@ layout: null
         "category"    : {{ item.category | default: "" | jsonify }},
         "countries    : {{ item.countries | default: "" | jsonify }},
         "keywords"    : {{ item.keywords | default: "" | jsonify }},
-        "link"        : {{ item.link | default: "" }},
+        "link"        : {{ item.link | default: "" | jsonify }},
         "content"     : {{ item.content | jsonify }}
       }
       {% assign first_item = false %}
