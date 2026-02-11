@@ -6,7 +6,7 @@ layout: null
   {% assign first_item = true %}
 
   {% for item in all_content %}
-    {% if item.title and item.url contains '.html' %}
+    {% if item.title and item.link and item.url contains '.html' %}
       {% unless first_item %},{% endunless %}
       {
         "title"       : {{ item.title | jsonify }},
