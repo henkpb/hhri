@@ -19,7 +19,6 @@ layout: null
     {% endcomment %}
     {% if item.title and item.url and item.url contains '.html' %}
       
-      {% comment %} Print comma only if this is NOT the first item {% endcomment %}
       {% unless first_item %},{% endunless %}
       
       {
@@ -29,11 +28,11 @@ layout: null
           Otherwise, default to "Page".
         {% endcomment %}
         "category" : {{ item.collection | default: "Page" | capitalize | jsonify }},
+        "countries : {{ item.countries | jsonify }},
         "url"      : "{{ item.url | relative_url }}",
         "content"  : {{ item.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
       }
       
-      {% comment %} Mark that we have printed an item {% endcomment %}
       {% assign first_item = false %}
       
     {% endif %}
