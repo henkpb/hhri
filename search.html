@@ -4,16 +4,19 @@ title: Search Results
 permalink: /search/
 ---
 
-<div class="container">
+<section class="micl-pane">
+  <header class="micl-appbar">
+    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
+  </header>
   <h1>Search Results for: <span id="search-query-display"></span></h1>
-  <p id="search-count"></p>
+  <p id="hhri-searchcount"></p>
   
   <hr>
 
-  <div id="full-results-container" class="hhri-theme-section">
+  <div id="hhri-searchresults" class="hhri-theme-section">
     <p>Loading results...</p>
   </div>
-</div>
+</section>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const query = urlParams.get('q');
   
   const displaySpan = document.getElementById('search-query-display');
-  const container = document.getElementById('full-results-container');
-  const countDisplay = document.getElementById('search-count');
+  const container = document.getElementById('hhri-searchresults');
+  const countDisplay = document.getElementById('hhri-searchcount');
 
   if (!query) {
     displaySpan.textContent = "None";
