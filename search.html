@@ -58,23 +58,23 @@ document.addEventListener("DOMContentLoaded", function() {
       matches.forEach(item => {
         // Build the HTML for each full article, checking if metadata exists
         htmlTemplate += `
-          <article class="search-result-full" style="margin-bottom: 3rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
-            <h2>${item.title}</h2>
-            
-            <div class="article-metadata" style="font-size: 0.9em; color: #555; margin-bottom: 1rem;">
-              ${item.year ? `<strong>Year:</strong> ${item.year} <br>` : ''}
-              ${item.organization ? `<strong>Organization:</strong> ${item.organization} <br>` : ''}
-              ${item.countries ? `<strong>Countries:</strong> ${item.countries} <br>` : ''}
-              ${item.category ? `<strong>Category:</strong> ${item.category} <br>` : ''}
+          <details class="micl-card-filled hhri-theme-item" tabindex="0">
+            <summary>
+              <span class="micl-card__headline-s">
+                <span class="micl-heading md-sys-typescale-emphasized-headline-small">${item.title}</span>
+              </span>
+              <span class="micl-card__supporting-text">
+                ${item.year ? `${item.year}` : ''}
+                ${item.year && item.organization ? ' | ' : ''}
+                ${item.organization ? `${item.organization}` : ''}
+              </span>
+            </summary>
+            <div class="micl-card__content md-sys-typescale-body-medium">
+              <p>${item.content}</p>
+              <hr class="micl-divider">
+              <a href="${item.link}" class="micl-button-text-s" target="_blank">View Source</a>
             </div>
-
-            <div class="article-content" style="margin-bottom: 1rem;">
-              ${item.content}
-            </div>
-
-            ${item.link ? `<a href="${item.link}" target="_blank" style="display: inline-block; padding: 10px 15px; background: #0056b3; color: white; text-decoration: none; border-radius: 4px;">External Link &rarr;</a>` : ''}
-          </article>
-        `;
+          </details>`;
       });
 
       // Inject the giant block of HTML into the page
