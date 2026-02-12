@@ -186,3 +186,23 @@ footer {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+.micl-appbar {
+    position: sticky;
+    inset: unset;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+}
+.micl-search {
+    inline-size: 50%;
+    max-inline-size: 312px;
+}
