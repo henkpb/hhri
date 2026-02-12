@@ -204,11 +204,14 @@ footer {
 }
 .micl-search {
     place-self: center;
-    inline-size: 50%;
+    inline-size: 100%;
     max-inline-size: 312px;
+    background-color: var(--md-sys-color-surface-container-high);
 
     input {
+        inline-size: 100%;
         padding-block: 0;
         border: none;
+        border-radius: 28px;
     }
 }
