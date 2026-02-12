@@ -7,7 +7,7 @@ collection: "theme_ethics"
 sections: "definitions, mhhr, codes, gbv, education, practice, organizations"
 
 definitions_title: "Definitions and basic terminology"
-definitions_text: "Ethics refers to a principles that delineate the distinction between right and wrong in human existence. An individual is described as "ethical" when their actions align with these principles and adhere to the societal standards. It also refers to the fact that our actions have consequences."
+definitions_text: "Ethics refers to a principles that delineate the distinction between right and wrong in human existence. An individual is described as 'ethical' when their actions align with these principles and adhere to the societal standards. It also refers to the fact that our actions have consequences."
 
 mhhr_title: "Ethics – mental health and human rights"
 mhhr_text: "“Humanitarian action has been characterized by a set of ethical and operational principles, with a particular emphasis on humanity, impartiality, neutrality, independence, and universality. These principles are articulated in the statutes of the International Red Cross Movement”"
