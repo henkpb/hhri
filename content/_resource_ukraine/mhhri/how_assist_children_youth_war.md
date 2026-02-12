@@ -4,7 +4,7 @@ year: 2022
 organization: "Helen Christie, clinical psychologist"
 category: "Publication"
 countries: "Ukraine"
-keywords: "children / war"
+keywords: "children | war"
 link: "https://www.hhri.org/wp-content/uploads/2023/09/31.5.2022-ukraina-How-to-assist-children.pdf"
 ---
 Як допомогти дітям та молоді під час війни та кризи. Інструменти для покращення сну. Труднощі зі сном через надмірне збудження часто зустрічається у дітей, які переживають війну. Основні стратегії боротьби з ними.
