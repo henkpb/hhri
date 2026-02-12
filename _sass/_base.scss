@@ -203,6 +203,12 @@ footer {
     inset-inline-start: 0;
 }
 .micl-search {
+    place-self: center;
     inline-size: 50%;
     max-inline-size: 312px;
+
+    input {
+        padding-block: 0;
+        border: none;
+    }
 }
