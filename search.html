@@ -15,7 +15,7 @@ permalink: /search/
     <div style="width:40px"></div>
   </header>
   <header>
-    <div>
+    <div style="justify-content:center;text-align:center">
       <h1 class="md-sys-typescale-display-large">Search results</h1>
       <span id="hhri-searchcount" class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
     </div>
@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get('q');
   
-  const displaySpan = document.querySelector('input[name=q]');
+  const input = document.querySelector('input[name=q]');
   const container = document.getElementById('hhri-searchresults');
   const countDisplay = document.getElementById('hhri-searchcount');
 
   if (!query) {
-    displaySpan.textContent = "None";
+    input.textContent = "None";
     container.innerHTML = "<p>Please enter a search term.</p>";
     return;
   }
+  input.value = query;
 
-  displaySpan.textContent = query;
   const lowerQuery = query.toLowerCase();
 
   // 2. Fetch the JSON data
@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
                (item.keywords && item.keywords.toLowerCase().includes(lowerQuery));
       });
 
-      countDisplay.textContent = matches.length + " article(s) found.";
+      countDisplay.textContent = matches.length + " article(s) found";
 
       // 4. Render the Full Articles
       if (matches.length === 0) {
-        container.innerHTML = "<p>No matching articles found.</p>";
+        container.innerHTML = "<p>No matching articles found</p>";
         return;
       }
 
