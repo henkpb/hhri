@@ -43,17 +43,79 @@ document.addEventListener("DOMContentLoaded", function()
   }
   input.value = searchterm;
 
-  const lowerQuery = searchterm.toLowerCase();
+  // foo bar: matches both 'foo' and 'bar'
+  // "foo bar": matches "foo bar" exactly
+  // foo OR bar: matches either 'foo' or 'bar'
+  // -foo: exclude text containing 'foo'
+  const searchMatch = (text, query) =>
+  {
+    if (!query || !query.trim()) return true;
+
+    const lowerText = text.toLowerCase();
+    
+    // 1. Tokenize the query using a Regular Expression
+    // Matches: 
+    // group 1: excluded phrase -"..."
+    // group 2: excluded word -...
+    // group 3: exact phrase "..."
+    // group 4: normal word ...
+    const regex = /-"([^"]+)"|-([^\s]+)|"([^"]+)"|([^\s]+)/g;
+    const tokens = [];
+    let match;
+
+    while ((match = regex.exec(query)) !== null) {
+      if (match[1]) tokens.push({ type: 'exclude', value: match[1] });
+      else if (match[2]) tokens.push({ type: 'exclude', value: match[2] });
+      else if (match[3]) tokens.push({ type: 'require', value: match[3] });
+      else if (match[4]) {
+        if (match[4] === 'OR') {
+          tokens.push({ type: 'OR' });
+        } else {
+          tokens.push({ type: 'require', value: match[4] });
+        }
+      }
+    }
+
+    // 2. Split tokens into groups separated by 'OR'
+    const orGroups = [];
+    let currentGroup = [];
+
+    for (const token of tokens) {
+      if (token.type === 'OR') {
+        if (currentGroup.length > 0) {
+          orGroups.push(currentGroup);
+          currentGroup = [];
+        }
+      } else {
+        currentGroup.push(token);
+      }
+    }
+    if (currentGroup.length > 0) {
+      orGroups.push(currentGroup);
+    }
+
+    // 3. Evaluate the logic: At least one OR group must be completely true
+    return orGroups.some(group => {
+      // Within an AND group, every token's condition must be met
+      return group.every(token => {
+        const term = token.value.toLowerCase();
+        const contains = lowerText.includes(term);
+        
+        return token.type === 'require' ? contains : !contains;
+      });
+    });
+  };
 
   // 2. Fetch the JSON data
   fetch('{{ "/search.json" | relative_url }}')
     .then(response => response.json())
     .then(data => {
       // 3. Filter the articles
-      const matches = data.filter(item => {
-        return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
-               (item.content && item.content.toLowerCase().includes(lowerQuery)) ||
-               (item.keywords && item.keywords.toLowerCase().includes(lowerQuery));
+      const matches = data.filter(item =>
+      {
+        return searchMatch(item.title && searchterm)
+               || searchMatch(item.content && searchterm)
+               || searchMatch(item.keywords && searchterm);
       });
 
       countDisplay.textContent = matches.length + " article(s) found";
