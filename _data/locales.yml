@@ -1,0 +1,10 @@
+en:
+  nav_home: "Home"
+  search_found: "article(s) found"
+  search_placeholder: "Search library"
+  search_results: "Search results"
+es:
+  nav_home: "Inicio"
+  search_found: "artículos encontrados"
+  search_placeholder: "Buscar en la biblioteca"
+  search_results: "Resultados de la búsqueda"

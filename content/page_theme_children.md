@@ -1,5 +1,6 @@
 ---
 layout: theme
+lang: en
 icon: "&#xE902;"
 title: "Children in armed conflict"
 subtitle: "Children’s rights in conflict are often violated; their rights to be protected from violence, sexual abuse, terror and loss are disrupted. Under such conditions, practically all the necessary factors for child development are seriously harmed, and children may experience short- and/or long-term physical and/or psychological consequences."

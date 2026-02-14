@@ -1,6 +1,6 @@
 ---
 layout: basic
-lang: en
+lang: es
 title: "About"
 subtitle: "In a world marked by conflict, displacement, and human rights violations, addressing the psychosocial well-being of affected individuals is important. Mental Health and Human Rights Info (MHHRI) is dedicated to improving the mental health of those exposed to severe human rights abuses in war conflict and natural disaster."
 ---

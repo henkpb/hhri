@@ -1,6 +1,5 @@
 ---
 layout: common
-title: Search Results
 permalink: /search/
 ---
 
@@ -9,21 +8,19 @@ permalink: /search/
     <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
     <form action="{{ '/search/' | relative_url }}" method="get" class="micl-textfield-filled micl-search">
       <span class="micl-textfield__icon-leading material-symbols-outlined">search</span>
-      <input type="text" name="q" autofocus placeholder="Search library">
+      <input type="text" name="q" autofocus placeholder="{{ site.data.locales[page.lang].search_placeholder }}">
       <span class="micl-textfield__icon-trailing"></span>
     </form>
     <div style="width:40px"></div>
   </header>
   <header style="justify-content:center;text-align:center">
     <div>
-      <h1 class="md-sys-typescale-display-large">Search results</h1>
-      <span id="hhri-searchcount" class="md-sys-typescale-headline-small">{{ page.subtitle }}</span>
+      <h1 class="md-sys-typescale-display-large">{{ site.data.locales[page.lang].search_results }}</h1>
+      <span id="hhri-searchcount" class="md-sys-typescale-headline-small"></span>
     </div>
   </header>
 
-  <div id="hhri-searchresults" class="hhri-theme-section">
-    <p>Loading results...</p>
-  </div>
+  <div id="hhri-searchresults" class="hhri-theme-section"></div>
 </section>
 
 <script>
@@ -121,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function()
       });
 
       if (countDisplay) {
-        countDisplay.textContent = matches.length + " article(s) found";
+        countDisplay.textContent = `${matches.length} {{ site.data.locales[page.lang].search_found }}`;
       }
 
       // 4. Render the Full Articles
