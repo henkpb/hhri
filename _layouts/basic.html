@@ -4,7 +4,7 @@ layout: common
 
 <section class="micl-pane">
   <header class="micl-appbar">
-    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu">menu</button>
+    <button type="button" class="micl-appbar__leading-icon micl-iconbutton-standard-s material-symbols-outlined" command="show-modal" commandfor="hhrimenu" aria-label="{{ site.data.locales[page.lang].nav_openmenu }}">menu</button>
     <form action="{{ '/search/' | relative_url }}" method="get" class="micl-textfield-filled micl-search">
       <span class="micl-textfield__icon-leading material-symbols-outlined">search</span>
       <input type="text" name="q" placeholder="Search library">

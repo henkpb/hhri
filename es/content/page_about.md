@@ -1,11 +1,9 @@
 ---
 layout: basic
 lang: es
-title: "About"
-subtitle: "In a world marked by conflict, displacement, and human rights violations, addressing the psychosocial well-being of affected individuals is important. Mental Health and Human Rights Info (MHHRI) is dedicated to improving the mental health of those exposed to severe human rights abuses in war conflict and natural disaster."
+title: "Quiénes somos"
+subtitle: "En un mundo marcado por conflictos, desplazamientos y violaciones de derechos humanos, es importante abordar el bienestar psicosocial de las personas afectadas. Salud Mental y Derechos Humanos Info (SMDH) se dedica a mejorar la salud mental de quienes están expuestos a graves abusos contra los derechos humanos en conflictos bélicos y desastres naturales."
 ---
-With a commitment to accessibility and empowerment, MHHRI serves as a vital resource, catering to health care professionals, human rights advocates, and caregivers alike. Our aim is grounded in the belief that access to information and knowledge is important to create change for people who have been exposed to human rights abuse.
+Con un compromiso con la accesibilidad y el empoderamiento, SMDH sirve como un recurso vital que atiende tanto a profesionales de la salud como a defensores de los derechos humanos y cuidadores. Nuestro objetivo se basa en la creencia de que el acceso a la información y al conocimiento es importante para generar cambios para las personas que han estado expuestas a abusos contra los derechos humanos.
 
-## About MHHRI
-
-## Founder and Chair of the Board
+## Sobre SMDHI
