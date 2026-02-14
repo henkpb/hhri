@@ -29,19 +29,24 @@ permalink: /search/
 <script>
 document.addEventListener("DOMContentLoaded", function()
 {
-  const urlParams = new URLSearchParams(window.location.search);
-  const searchterm = urlParams.get('q');
-  
-  const input = document.querySelector('input[name=q]');
-  const container = document.getElementById('hhri-searchresults');
+  const input        = document.querySelector('input[name=q]');
+  const container    = document.getElementById('hhri-searchresults');
   const countDisplay = document.getElementById('hhri-searchcount');
 
-  if (!searchterm) {
-    input.textContent = "None";
-    container.innerHTML = "<p>Please enter a search term.</p>";
+  if (!input || !container) return;
+
+  const urlParams  = new URLSearchParams(window.location.search);
+  const searchTerm = urlParams.get('q');
+
+  input.value = searchTerm;
+
+  if (!searchTerm) {
+    container.innerHTML = '';
+    if (countDisplay) {
+      countDisplay.textContent = '';
+    }
     return;
   }
-  input.value = searchterm;
 
   // foo bar: matches both 'foo' and 'bar'
   // "foo bar": matches "foo bar" exactly
@@ -109,20 +114,18 @@ document.addEventListener("DOMContentLoaded", function()
     .then(response => response.json())
     .then(data => {
       // 3. Filter the articles
-      const matches = data.filter(item =>
-      {
-        return searchMatch(item.title, searchterm)
-               || searchMatch(item.content, searchterm)
-               || searchMatch(item.keywords, searchterm);
+      const matches = data.filter(item => {
+        return searchMatch(item.title, searchTerm)
+               || searchMatch(item.content, searchTerm)
+               || searchMatch(item.keywords, searchTerm);
       });
 
-      countDisplay.textContent = matches.length + " article(s) found";
+      if (countDisplay) {
+        countDisplay.textContent = matches.length + " article(s) found";
+      }
 
       // 4. Render the Full Articles
-      if (matches.length === 0) {
-        container.innerHTML = "<p>No matching articles found</p>";
-        return;
-      }
+      if (matches.length === 0) return;
 
       let htmlTemplate = "";
 
@@ -147,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function()
 </details>`;
       });
 
-      // Inject the giant block of HTML into the page
+      // 5. Inject the block of HTML into the page
       container.innerHTML = htmlTemplate;
     })
     .catch(error => {
