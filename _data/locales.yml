@@ -1,10 +1,14 @@
 en:
+  nav_closemenu: "Close main menu"
   nav_home: "Home"
+  nav_openmenu: "Open main menu"
   search_found: "article(s) found"
   search_placeholder: "Search library"
   search_results: "Search results"
 es:
+  nav_closemenu: "Cerrar el menú principal"
   nav_home: "Inicio"
+  nav_openmenu: "Abrir el menú principal"
   search_found: "artículos encontrados"
   search_placeholder: "Buscar en la biblioteca"
   search_results: "Resultados de la búsqueda"
