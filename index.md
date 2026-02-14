@@ -1,5 +1,6 @@
 ---
 layout: home
+lang: en
 logo: "/assets/images/logo.svg"
 title: "Mental Health and Human Rights Info"
 subtitle: |
