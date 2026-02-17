@@ -62,6 +62,10 @@ html {
   }
 }
 
+summary > :last-child {
+  padding-block-end: 16px;
+}
+
 /*
   The first <header> on a page contains the App Bar, the second the page title and icon.
 */
