@@ -1,0 +1,1 @@
+Configuration files for use with [Decap CMS](https://decapcms.org/).

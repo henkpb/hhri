@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: henkpb/hhri
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "theme"
+    label: "Themes"
+    folder: "_theme_gbv"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Organization", name: "organization", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
